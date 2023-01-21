@@ -13,7 +13,7 @@ public class TitleScreen {
             menuRepeat();
         }
         else if (option == 2) {
-            System.out.println("Test Settings");
+            System.out.println("Test settings.Settings");
             System.out.println("");
             menuRepeat();
         }
