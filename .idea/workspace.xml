@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="working on collors...">
-      <change afterPath="$PROJECT_DIR$/src/BaseGame/DailyOption.java" afterDir="false" />
+    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="Finished settings. User can now select a font and background color.">
+      <change afterPath="$PROJECT_DIR$/src/BaseGame/CheckingStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaseGame/Testing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseGame/DailyOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseGame/DailyOption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TitleScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TitleScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings/SettingsSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/SettingsSelection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674314059647</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finished settings. User can now select a font and background color.">
+      <created>1674322147117</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674322147117</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,7 +132,8 @@
     <MESSAGE value="Working on the title screen" />
     <MESSAGE value="Adding settings - this will allow users to change colors." />
     <MESSAGE value="working on collors..." />
-    <option name="LAST_COMMIT_MESSAGE" value="working on collors..." />
+    <MESSAGE value="Finished settings. User can now select a font and background color." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished settings. User can now select a font and background color." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

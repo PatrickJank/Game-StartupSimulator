@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import BaseGame.DailyOption;
 import settings.Settings;
 import settings.SettingsSelection;
 
@@ -8,7 +9,7 @@ public class Main {
 TitleScreen stateOption = new TitleScreen();
 Scanner select = new Scanner(System.in);
 SettingsSelection color = new SettingsSelection();
-
+DailyOption DailyOption1 = new DailyOption();
 
 stateOption.WelcomeScreen();
 int readInput1 = 0;
@@ -19,8 +20,7 @@ int readInput3 = 0;
     readInput1 = select.nextInt();
 stateOption.MainOptions(readInput1);
 }
-
-
+DailyOption1.DailyChoice();
 
     }
 }

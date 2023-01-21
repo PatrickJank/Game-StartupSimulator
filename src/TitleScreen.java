@@ -2,7 +2,7 @@ import settings.SettingsSelection;
 import java.util.Scanner;
 public class TitleScreen {
 SettingsSelection GoToSettings = new SettingsSelection();
-    Scanner select = new Scanner(System.in);
+   private Scanner select = new Scanner(System.in);
 
 
 
