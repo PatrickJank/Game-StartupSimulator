@@ -11,15 +11,14 @@ SettingsSelection color = new SettingsSelection();
 
 
 stateOption.WelcomeScreen();
-int readInput = 0;
-//color.SettingsSelectionOption();
+int readInput1 = 0;
+int readInput2 = 0;
+int readInput3 = 0;
 
-/*
-        while(readInput != 1) {
-    readInput = select.nextInt();
-stateOption.MainOptions(readInput);
+        while(readInput1 != 1) {
+    readInput1 = select.nextInt();
+stateOption.MainOptions(readInput1);
 }
-*/
 
 
 
