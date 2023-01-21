@@ -23,6 +23,8 @@ public class TitleScreen {
             System.out.println("");
             menuRepeat();
         }
+        else
+            System.out.println("Please enter a valid number");
 
     }
 
