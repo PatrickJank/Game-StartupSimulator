@@ -14,8 +14,6 @@ SettingsSelection color = new SettingsSelection();
 DailyOption DailyOption1 = new DailyOption();
 ProjectTemplate projects = new ProjectTemplate();
 NumberGenerator test = new NumberGenerator();
-int Name =test.NumberGeneratorValue(0,11);
-int Description =test.NumberGeneratorValue(0,11);
 
 //stateOption.WelcomeScreen();
 int readInput1 = 0;

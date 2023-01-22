@@ -2,7 +2,7 @@ package Projects;
 import OtherClasses.NumberGenerator;
 
 public class ProjectTemplate {
-    private String[] ProjectName = {"Create a Website for our shop!",
+    private final String[] ProjectName = {"Create a Website for our shop!",
             "Create me a mobile game!",
             "Digitize our business!",
             "Looking for help with a project!",
@@ -14,7 +14,7 @@ public class ProjectTemplate {
             "TOO MANY BUGZ",
             "Outsourcing required",
             "I need a person smarter than me"};
-    private String[] ProjectDescription = {"HELLO! I was working on a project for my friend but something broke and i can't seem to fix it... please do something! I will pay a nice sum of cash! Alternatively i can help you invest in my crypto coins :).",
+    private final String[] ProjectDescription = {"HELLO! I was working on a project for my friend but something broke and i can't seem to fix it... please do something! I will pay a nice sum of cash! Alternatively i can help you invest in my crypto coins :).",
             "I am looking for a talented individual for a private project. I also need you to keep this only between us two. I will pay a fair amount of money. Do not keep me waiting.",
             "Good evening friend, i am looking for a talented person to move some of our documentation in paper, to an online server/website. I'll be honest - i have no idea about any of this so it's all up to you. I will pay if needed.",
             "Help required. Details attached. You will be rewarded upon completion.",
@@ -36,7 +36,7 @@ public class ProjectTemplate {
     private char Deadline;
     private int Penalty;
     private int PaycheckDate;
-    private int DifficultyLevel;
+
     NumberGenerator randomizer = new NumberGenerator();
 
     //names + description
