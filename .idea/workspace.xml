@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="Creating templates for projects and all humans... part2">
-      <change afterPath="$PROJECT_DIR$/src/NumberGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/art/AsciiPictures.java" afterDir="false" />
+    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="Created a template for random numbers. Also working on randomizing projects, so far there are random names">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseGame/CheckingStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseGame/Stats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseGame/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseGame/Testing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Projects/ProjectTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projects/ProjectTemplate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +17,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -123,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674387666273</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Created a template for random numbers. Also working on randomizing projects, so far there are random names">
+      <created>1674393084028</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674393084028</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,7 +151,8 @@
     <MESSAGE value="Created daily options, as well as a base for testing option" />
     <MESSAGE value="Creating templates for projects and all humans..." />
     <MESSAGE value="Creating templates for projects and all humans... part2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating templates for projects and all humans... part2" />
+    <MESSAGE value="Created a template for random numbers. Also working on randomizing projects, so far there are random names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a template for random numbers. Also working on randomizing projects, so far there are random names" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

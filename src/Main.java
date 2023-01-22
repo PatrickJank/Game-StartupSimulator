@@ -20,8 +20,9 @@ int readInput2 = 0;
 int readInput3 = 0;
 
 
-int a =test.NumberGeneratorTest(0,11);
-        projects.projects(a);
+int Name =test.NumberGeneratorTest(0,11);
+int Description =test.NumberGeneratorTest(0,11);
+        projects.projects(Name, Description);
 /*
         while(readInput1 != 1) {
     readInput1 = select.nextInt();
