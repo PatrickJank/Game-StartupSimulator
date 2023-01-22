@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="More work on random projects. Now there are random titles and descriptions each time!">
+    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="More work on randomizing projects, CL12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OtherClasses/NumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OtherClasses/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OtherClasses/NumberGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Projects/ProjectTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projects/ProjectTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TitleScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OtherClasses/TitleScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/art/AsciiPictures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/art/AsciiPictures.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674395623477</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="More work on randomizing projects, CL12">
+      <created>1674399184033</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674399184033</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,7 +173,8 @@
     <MESSAGE value="Creating templates for projects and all humans... part2" />
     <MESSAGE value="Created a template for random numbers. Also working on randomizing projects, so far there are random names" />
     <MESSAGE value="More work on random projects. Now there are random titles and descriptions each time!" />
-    <option name="LAST_COMMIT_MESSAGE" value="More work on random projects. Now there are random titles and descriptions each time!" />
+    <MESSAGE value="More work on randomizing projects, CL12" />
+    <option name="LAST_COMMIT_MESSAGE" value="More work on randomizing projects, CL12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -174,12 +182,16 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/OtherClasses/TitleScreen.java</url>
           <line>44</line>
-          <properties class="TitleScreen" method="menuRepeat">
+          <properties class="OtherClasses.TitleScreen">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

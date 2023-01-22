@@ -24,10 +24,8 @@ int readInput3 = 0;
 
 
 
-boolean status = test.NumberGeneratorBool();
-//projects.projects(Name, Description);
-System.out.println(test.NumberGeneratorBool());
 
+        //actual game
 /*
         while(readInput1 != 1) {
     readInput1 = select.nextInt();
