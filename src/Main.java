@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import BaseGame.DailyOption;
-import settings.Settings;
+import Projects.ProjectTemplate;
 import settings.SettingsSelection;
 
 public class Main {
@@ -10,17 +10,24 @@ TitleScreen stateOption = new TitleScreen();
 Scanner select = new Scanner(System.in);
 SettingsSelection color = new SettingsSelection();
 DailyOption DailyOption1 = new DailyOption();
+ProjectTemplate projects = new ProjectTemplate();
+NumberGenerator test = new NumberGenerator();
 
-stateOption.WelcomeScreen();
+
+//stateOption.WelcomeScreen();
 int readInput1 = 0;
 int readInput2 = 0;
 int readInput3 = 0;
 
+
+int a =test.NumberGeneratorTest(0,11);
+        projects.projects(a);
+/*
         while(readInput1 != 1) {
     readInput1 = select.nextInt();
 stateOption.MainOptions(readInput1);
 }
 DailyOption1.DailyChoice();
-
+*/
     }
 }
