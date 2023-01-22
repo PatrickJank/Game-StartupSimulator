@@ -1,5 +1,7 @@
 import java.util.Scanner;
 import BaseGame.DailyOption;
+import OtherClasses.NumberGenerator;
+import OtherClasses.TitleScreen;
 import Projects.ProjectTemplate;
 import settings.SettingsSelection;
 
@@ -12,7 +14,8 @@ SettingsSelection color = new SettingsSelection();
 DailyOption DailyOption1 = new DailyOption();
 ProjectTemplate projects = new ProjectTemplate();
 NumberGenerator test = new NumberGenerator();
-
+int Name =test.NumberGeneratorValue(0,11);
+int Description =test.NumberGeneratorValue(0,11);
 
 //stateOption.WelcomeScreen();
 int readInput1 = 0;
@@ -20,9 +23,11 @@ int readInput2 = 0;
 int readInput3 = 0;
 
 
-int Name =test.NumberGeneratorTest(0,11);
-int Description =test.NumberGeneratorTest(0,11);
-        projects.projects(Name, Description);
+
+boolean status = test.NumberGeneratorBool();
+//projects.projects(Name, Description);
+System.out.println(test.NumberGeneratorBool());
+
 /*
         while(readInput1 != 1) {
     readInput1 = select.nextInt();

@@ -1,4 +1,5 @@
 package Projects;
+import OtherClasses.NumberGenerator;
 
 public class ProjectTemplate {
     public String[] ProjectName = {"Create a Website for our shop!",
@@ -35,9 +36,9 @@ public class ProjectTemplate {
     private int Penalty;
     private int PaycheckDate;
     private int DifficultyLevel;
+    NumberGenerator test = new NumberGenerator();
 
-
-    public void projects(int project_name, int project_description) {
+    private void projects(int project_name, int project_description) {
         switch (project_name) {
             case 0:
                 System.out.println(ProjectName[0]);
@@ -114,9 +115,41 @@ public class ProjectTemplate {
                 System.out.println(ProjectDescription[11]);
                 break;
         }
+    }
+    private void DifficultyGenerator(){
+    int a = test.NumberGeneratorValue(1,3);
+    switch(a){
+        case 1:
+            int b;
 
 
+
+            break;
+        case 2:
+
+
+
+
+            break;
+        case 3:
+
+
+
+
+            break;
+    }
+    }
+
+
+    private void EasyProject(int project_name, int project_description){
+       projects(project_name, project_description);
+    }
+    private void MediumProject(int project_name, int project_description){
+       projects(project_name, project_description);
+    }
+    private void HardProject(int project_name, int project_description){
+        projects(project_name, project_description);
+    }
 
 
     }
-}

@@ -1,3 +1,5 @@
+package OtherClasses;
+
 import settings.SettingsSelection;
 import java.util.Scanner;
 public class TitleScreen {
