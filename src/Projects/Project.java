@@ -1,54 +1,115 @@
 package Projects;
 
+import People.Client;
+
 public class Project {
+    
+    
+    
+    private String ProjectName;
+    private String ProjectDescription;
+    private boolean FrontEnd;
+    private boolean Backend;
+    private boolean mobile;
+    private boolean dataBase;
+    private boolean wordpress;
+    private boolean prestashop;
+    // replace this with a client object, then remove this comment you dummy
+    private String Client;
+    private String Deadline;
+    private int Penalty;
+    private int PaycheckDate;
 
-    public String ProjectName ;
-        public String ProjectDescription;
-        public boolean FrontEnd;
-        public boolean Backend;
-        public boolean mobile;
-        public boolean dataBase;
-        public boolean wordpress;
-        public boolean prestashop;
-        public String client;
-        public String Deadline;
-        public int Penalty;
-        public int PaycheckDate;
+    public Project(String ProjectName, String ProjectDescription){
 
-    public Project(String ProjectName, String ProjectDescription, boolean FrontEnd, boolean Backend, boolean mobile, boolean dataBase, boolean wordpress, boolean prestashop, String client, String Deadline, int Penalty, int PaycheckDate) {
-this.ProjectName = ProjectName;
-this.ProjectDescription = ProjectDescription;
-this.FrontEnd = FrontEnd;
-this.Backend = Backend;
-this.mobile = mobile;
-this.dataBase = dataBase;
-this.wordpress = wordpress;
-this.prestashop = prestashop;
-this.Penalty = Penalty;
-this.PaycheckDate = PaycheckDate;
     }
-
-public String test(){/*
-    if(FrontEnd == true){
-        System.out.println("FrontEnd knowledge is a must.");
-    }
-    if(Backend == true){
-        System.out.println("Backend knowledge is a must.");
-    }
-    if(mobile == true){
-        System.out.println("mobile knowledge is a must.");
-    }
-    if(dataBase == true){
-        System.out.println("dataBase knowledge is a must.");
-    }
-    if(wordpress == true){
-        System.out.println("wordpress knowledge is a must.");
-    }
-    if(prestashop == true){
-        System.out.println("Prestashop knowledge is a must.");
-    }
-    */
-       return(ProjectName+ " " + ProjectDescription + " " + Deadline + " " + Penalty + " " + PaycheckDate);
+// May Lord forgive me for this mess
+public void setProjectName(String ProjectName)
+{
+        this.ProjectName=ProjectName;
 }
+public void setClient(String Client)
+{
+        this.Client=Client;
+}
+
+public void setDeadline(String Deadline)
+    {
+        this.Deadline=Deadline;
+    }
+public void setPenalty(int Penalty)
+    {
+        this.Penalty=Penalty;
+    }
+public void setPaycheckDate(int PaycheckDate)
+    {
+        this.PaycheckDate=PaycheckDate;
+    }
+public void setProjectDescription(String ProjectDescription)
+    {
+        this.ProjectDescription=ProjectDescription;
+    }
+
+public void setFrontEnd(boolean FrontEnd){
+        this.FrontEnd=FrontEnd;
+}
+public void setBackend(boolean Backend){
+        this.Backend=Backend;
+}
+public void setMobile(boolean Mobile){
+        this.mobile=Mobile;
+}
+public void setDataBase(boolean DataBase){
+        this.dataBase=DataBase;
+}
+public void setWordpress(boolean Wordpress){
+        this.wordpress=wordpress;
+}
+public void setPrestashop(boolean prestashop){
+        this.prestashop=prestashop;
+}
+
+public String getProjectName(){
+        return ProjectName;
+}
+public String getProjectDescription(){
+        return ProjectDescription;
+}
+
+public String getClient(){
+        return Client;
+}
+public boolean getFrontEnd(){
+        return FrontEnd;
+}
+public boolean getBackend(){
+        return Backend;
+    }
+public boolean getMobile(){
+        return mobile;
+    }
+
+public boolean getDataBase(){
+        return dataBase;
+    }
+public boolean getWordpress() {
+    return wordpress;
+}
+
+public boolean getPrestashop(){
+        return prestashop;
+}
+
+public String getDeadline(){
+        return Deadline;
+}
+public int getPenalty(){
+        return Penalty;
+}
+
+public int getPaycheckDate(){
+        return PaycheckDate;
+}
+
 
 }

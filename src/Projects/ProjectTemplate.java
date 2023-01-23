@@ -40,6 +40,7 @@ public class ProjectTemplate {
     NumberGenerator randomizer = new NumberGenerator();
 
     //names + description
+
     private void projects(int project_name, int project_description) {
         switch (project_name) {
             case 0:
@@ -313,7 +314,9 @@ public class ProjectTemplate {
 /*
 
 
-// This is for forcing a project from a set difficulty level. I only use this at the start of the game.
+// This is for forcing a project from a set difficulty level.
+// I dunno what to do about this but i'll keep it just in case
+
     private void EasyProject(int project_name, int project_description){
         System.out.println("This is an easy project.");
        projects(project_name, project_description);
