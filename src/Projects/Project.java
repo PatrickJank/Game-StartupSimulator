@@ -1,7 +1,4 @@
 package Projects;
-
-import People.Client;
-
 public class Project {
     
     
@@ -14,15 +11,12 @@ public class Project {
     private boolean dataBase;
     private boolean wordpress;
     private boolean prestashop;
-    // replace this with a client object, then remove this comment you dummy
+    // replace this with a client object, then remove this comment you dummy :3
     private String Client;
     private String Deadline;
     private int Penalty;
     private int PaycheckDate;
 
-    public Project(String ProjectName, String ProjectDescription){
-
-    }
 // May Lord forgive me for this mess
 public void setProjectName(String ProjectName)
 {
@@ -63,7 +57,7 @@ public void setDataBase(boolean DataBase){
         this.dataBase=DataBase;
 }
 public void setWordpress(boolean Wordpress){
-        this.wordpress=wordpress;
+        this.wordpress=Wordpress;
 }
 public void setPrestashop(boolean prestashop){
         this.prestashop=prestashop;
@@ -110,6 +104,9 @@ public int getPenalty(){
 public int getPaycheckDate(){
         return PaycheckDate;
 }
+
+
+
 
 
 }

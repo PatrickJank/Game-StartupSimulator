@@ -19,6 +19,7 @@ Testing debug = new Testing();
         System.out.println("7 - FIRE A WORKER");
         System.out.println("8 - SPEND THE DAY DEALING WITH AUTHORITIES/LEGAL STUFF");
         System.out.println("9 - CHECK STATS");
+        System.out.println("10 - HIRE A SUBCONTRACTOR");
         SelectedOption();
     }
 

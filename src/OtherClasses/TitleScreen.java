@@ -21,8 +21,10 @@ SettingsSelection GoToSettings = new SettingsSelection();
             menuRepeat();
         }
         else if (option1 ==3) {
+            System.out.println("Design by Patryk Jankiewicz");
             System.out.println("Programed by Patryk Jankiewicz");
             System.out.println("Tested by Patryk Jankiewicz");
+            System.out.println("Praying for the code to work: Patryk Jankiewicz");
             System.out.println("");
             menuRepeat();
         }

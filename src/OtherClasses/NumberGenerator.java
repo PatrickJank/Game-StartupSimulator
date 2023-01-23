@@ -7,7 +7,8 @@ public class NumberGenerator {
 
 
 //This generates from 0 to a max value. It ALWAYS starts from 0.
-    // I tried other generators but i had so many exceptions my computer started crying
+    // I tried other generators but I had so many exceptions my computer started crying
+
 public int NumberGeneratorValue2(int max){
     int rand_int = rd.nextInt(max+1);
     return rand_int;
