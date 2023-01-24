@@ -7,11 +7,4 @@ public class Stats {
     */
 
 
-    int cash = 1000;
-    boolean dataBase = true;
-    boolean front_end = true;
-    boolean wordpress = true;
-    boolean prestashop = true;
-
-
 }

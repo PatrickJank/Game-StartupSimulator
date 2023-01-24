@@ -1,11 +1,11 @@
 package BaseGame;
-import settings.Settings;
 import java.util.Scanner;
-
+import Projects.*;
 public class DailyOption {
 int x = 5;
 Scanner select = new Scanner(System.in);
 Testing debug = new Testing();
+ProjectGenerator projects = new ProjectGenerator();
 
     public void DailyChoice(){
         System.out.println("SELECT AN ACTIVITY FOR TODAY...");
@@ -22,40 +22,28 @@ Testing debug = new Testing();
         System.out.println("10 - HIRE A SUBCONTRACTOR");
         SelectedOption();
     }
-
     public void SelectedOption(){
         int option = select.nextInt();
-        switch (option)
-        {
-            case 1:
-
-                break;
-            case 2:
-
-                break;
-            case 3:
-
-                break;
-
-            case 4:
-                debug.TestingOptions();
-
-                break;
-            case 5:
-
-                break;
-            case 6:
-
-                break;
-            case 7:
-
-                break;
-            case 8:
-
-                break;
-            case 9:
-
-                break;
+        switch (option) {
+            case 1 -> {
+                projects.DifficultyGenerator();
+                SelectedOption();
+            }
+            case 2 ->{ System.out.println("This is a placeholder for looking for a client");SelectedOption();}
+            case 3 -> {System.out.println("This is a placeholder for programing stuff");
+                SelectedOption();}
+            case 4 ->{ debug.TestingOptions();
+                SelectedOption();}
+            case 5 -> {System.out.println("This is a placeholder for giving the finished project");
+                SelectedOption();}
+            case 6 -> {System.out.println("This is a placeholder for hiring a worker");
+                SelectedOption();}
+            case 7 -> {System.out.println("This is a placeholder for firing a worker");
+                SelectedOption();}
+            case 8 -> {System.out.println("This is a placeholder for dealing with zus");
+                SelectedOption();}
+            case 9 -> {projects.ProjectInfo();SelectedOption();}
+            case 10 -> {System.out.println("This is a placeholder for hiring a contractor");;SelectedOption();}
         }
 
 
@@ -65,4 +53,6 @@ Testing debug = new Testing();
     }
 
 
+    public void TheGame() {
+    }
 }

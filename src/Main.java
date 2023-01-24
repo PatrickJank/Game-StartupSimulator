@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import BaseGame.DailyOption;
 import OtherClasses.NumberGenerator;
-import OtherClasses.TitleScreen;
+import OtherClasses.TheGame;
 import Projects.ProjectGenerator;
 import settings.SettingsSelection;
 
@@ -17,34 +17,14 @@ Now only God knows, so here is how many hours I wasted trying to figure out stuf
 public class Main {
     public static void main(String[] args) {
 
-TitleScreen stateOption = new TitleScreen();
+TheGame stateOption = new TheGame();
 Scanner select = new Scanner(System.in);
 SettingsSelection color = new SettingsSelection();
 DailyOption DailyOption1 = new DailyOption();
 ProjectGenerator projects = new ProjectGenerator();
 NumberGenerator test = new NumberGenerator();
-
+TheGame TheGame = new TheGame();
+TheGame.TheGame();
 //System.out.println(test1);
 //stateOption.WelcomeScreen();
-int readInput1 = 0;
-int readInput2 = 0;
-int readInput3 = 0;
-
-
-
-projects.DifficultyGenerator();
-projects.DifficultyGenerator();
-       // projects.DifficultyGenerator();
-projects.ProjectInfo();
-
-
-        //actual game
-/*
-        while(readInput1 != 1) {
-    readInput1 = select.nextInt();
-stateOption.MainOptions(readInput1);
-}
-DailyOption1.DailyChoice();
-*/
-    }
-}
+}}
