@@ -29,13 +29,18 @@ public class ProjectGenerator extends Project {
     private int check=0;
     //Why do it like this?
     // Well, the project did not state any LIMITS to current projects, so it's easier to pre-make 2 projects and change their parameters.
+    // it's easy to set the limit slightly higher at any point so it also gives the end user more input if needed (for example difficulty levels), so it's all gucci.
     NumberGenerator randomizer = new NumberGenerator();
     Project Project1 = new Project();
     Project Project2 = new Project();
 
-    //names + description
 
+    /*
 
+  Current design is to give a week for EACH technology in the project.
+  Side note: i still need to figure out how to do dates.
+
+*/
     // use this to actually generate a random project.
     // This uses 2 pre-made class objects,
     // then assign generated values to them
@@ -72,6 +77,7 @@ else{
                 case 0:
                     if (check == 0) {
                         Project1.setFrontEnd(true);
+                        System.out.println(Project1.getFrontEnd());
                         //System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setFrontEnd(true);
@@ -474,7 +480,6 @@ while((Tier3_1==Tier3_3)||(Tier3_2==Tier3_3)||(Tier3_1==Tier3_2));
         }
     }
     }
-System.out.println(check);
     }
 /*
 // This is for forcing a project from a set difficulty level.
@@ -532,27 +537,45 @@ public void ProjectInfo(){
     else {
         System.out.println("Project name: " + Project1.getProjectName());
         System.out.println("Project description is: " + Project1.getProjectDescription());
-        System.out.println("Here is how big the pentalty is: " + Project1.getPenalty());
+        System.out.println("Here is how big the penalty is: " + Project1.getPenalty());
         System.out.println("Here is how long you'll have to wait for the cash: " + Project1.getPaycheckDate());
         System.out.println("This person is your client: " + Project1.getClient());
         System.out.println("Here is your deadline: " + Project1.getDeadline());
         // Oh Lord here it goes
-        if (Project1.getDataBase() == true) {
+        if ((Project1.getDataBase()) == true) {
             System.out.println("data bases is a requirement.");
         }
-        if (Project1.getMobile() == true) {
+        if ((Project1.getMobile()) == true) {
             System.out.println("Mobile stuff is a requirement.");
         }
-        if (Project1.getFrontEnd()==true) {
+        if ((Project1.getFrontEnd())==true) {
             System.out.println("FrontEnd knowledge is a requirement");
         }
-        if (Project1.getBackend()==true) {
+        if ((Project1.getBackend())==true) {
             System.out.println("Backend knowledge is a requirement");
         }
-        if (Project1.getPrestashop()==true) {
+        if ((Project1.getPrestashop())==true) {
             System.out.println("Prestashop knowledge is a requirement");
         }
-        if (Project1.getWordpress()==true) {
+        if ((Project1.getWordpress())==true) {
+            System.out.println("Prestashop knowledge is a requirement");
+        }
+        if ((Project2.getDataBase()) == true) {
+            System.out.println("data bases is a requirement.");
+        }
+        if ((Project2.getMobile()) == true) {
+            System.out.println("Mobile stuff is a requirement.");
+        }
+        if ((Project2.getFrontEnd())==true) {
+            System.out.println("FrontEnd knowledge is a requirement");
+        }
+        if ((Project2.getBackend())==true) {
+            System.out.println("Backend knowledge is a requirement");
+        }
+        if ((Project2.getPrestashop())==true) {
+            System.out.println("Prestashop knowledge is a requirement");
+        }
+        if ((Project2.getWordpress())==true) {
             System.out.println("Prestashop knowledge is a requirement");
         }
     }}}

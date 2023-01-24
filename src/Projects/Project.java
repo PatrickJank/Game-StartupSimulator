@@ -5,12 +5,12 @@ public class Project {
     
     private String ProjectName;
     private String ProjectDescription;
-    private boolean FrontEnd;
-    private boolean Backend;
-    private boolean mobile;
-    private boolean dataBase;
-    private boolean wordpress;
-    private boolean prestashop;
+    private boolean FrontEnd = false;
+    private boolean Backend = false;
+    private boolean mobile = false;
+    private boolean dataBase = false;
+    private boolean wordpress = false;
+    private boolean prestashop = false;
     // replace this with a client object, then remove this comment you dummy :3
     private String Client;
     private String Deadline;
@@ -18,6 +18,13 @@ public class Project {
     private int PaycheckDate;
 
 // May Lord forgive me for this mess
+
+
+
+
+
+
+
 public void setProjectName(String ProjectName)
 {
         this.ProjectName=ProjectName;
@@ -50,14 +57,14 @@ public void setFrontEnd(boolean FrontEnd){
 public void setBackend(boolean Backend){
         this.Backend=Backend;
 }
-public void setMobile(boolean Mobile){
-        this.mobile=Mobile;
+public void setMobile(boolean mobile){
+        this.mobile=mobile;
 }
-public void setDataBase(boolean DataBase){
-        this.dataBase=DataBase;
+public void setDataBase(boolean dataBase){
+        this.dataBase=dataBase;
 }
-public void setWordpress(boolean Wordpress){
-        this.wordpress=Wordpress;
+public void setWordpress(boolean wordpress){
+        this.wordpress=wordpress;
 }
 public void setPrestashop(boolean prestashop){
         this.prestashop=prestashop;
