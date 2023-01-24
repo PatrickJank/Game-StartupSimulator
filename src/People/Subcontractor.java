@@ -1,4 +1,4 @@
 package People;
 
-public class Subcontractor {
+public class Subcontractor extends Person{
 }

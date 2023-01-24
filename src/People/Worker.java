@@ -1,4 +1,5 @@
 package People;
-
-public class Worker {
+import OtherClasses.NumberGenerator;
+public class Worker extends Person{
+    
 }

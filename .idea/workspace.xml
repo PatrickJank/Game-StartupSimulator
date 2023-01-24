@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="added deadline and work days required variables to the project class and set them up with the difficulty generator. This is temporary as I still need to figure out how to do dates properly.&#10;A fix for check variable incorrectly counting, which would break project checks&#10;&#10;Generating projects is like 90% done already.&#10;Time to create the client class and connect it with project generators.">
-      <change afterPath="$PROJECT_DIR$/src/OtherClasses/TheGame.java" afterDir="false" />
+    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="Daily choices are kinda working.&#10;Now the game properly starts :)">
+      <change afterPath="$PROJECT_DIR$/src/People/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/People/Workers/Programmer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/People/Workers/QATester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/People/Workers/Seller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseGame/DailyOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseGame/DailyOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaseGame/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseGame/Stats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OtherClasses/TitleScreen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Projects/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projects/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/People/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/People/Subcontractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People/Subcontractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/People/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People/Worker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -202,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674583370835</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Daily choices are kinda working.&#10;Now the game properly starts :)">
+      <created>1674586867497</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1674586867497</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,7 +243,8 @@
     <MESSAGE value="even more work on project class&#10;it is kinda working now so hopefully tomorrow i can start working on other stuff" />
     <MESSAGE value="Fixed setters not working while displaying stats." />
     <MESSAGE value="added deadline and work days required variables to the project class and set them up with the difficulty generator. This is temporary as I still need to figure out how to do dates properly.&#10;A fix for check variable incorrectly counting, which would break project checks&#10;&#10;Generating projects is like 90% done already.&#10;Time to create the client class and connect it with project generators." />
-    <option name="LAST_COMMIT_MESSAGE" value="added deadline and work days required variables to the project class and set them up with the difficulty generator. This is temporary as I still need to figure out how to do dates properly.&#10;A fix for check variable incorrectly counting, which would break project checks&#10;&#10;Generating projects is like 90% done already.&#10;Time to create the client class and connect it with project generators." />
+    <MESSAGE value="Daily choices are kinda working.&#10;Now the game properly starts :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Daily choices are kinda working.&#10;Now the game properly starts :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
