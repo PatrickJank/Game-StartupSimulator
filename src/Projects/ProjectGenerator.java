@@ -33,14 +33,21 @@ public class ProjectGenerator extends Project {
     NumberGenerator randomizer = new NumberGenerator();
     Project Project1 = new Project();
     Project Project2 = new Project();
-
+    Project Project3 = new Project();
+    Project Project4 = new Project();
+    Project Project5 = new Project();
 
     /*
-
-  Current design is to give a week for EACH technology in the project.
+  Current design:
+   * give a week for EACH technology in the project. This means 5 working days (currently i don't count weekends but we will see)
+   * How long the player will be required to spend on each technology?
+     Let's say 2 WORKING days. This can be adjusted with difficulty levels.
+   *
   Side note: i still need to figure out how to do dates.
-
 */
+
+
+
     // use this to actually generate a random project.
     // This uses 2 pre-made class objects,
     // then assign generated values to them
@@ -49,8 +56,6 @@ public class ProjectGenerator extends Project {
         int testing2=(randomizer.NumberGeneratorValue2(11));
         String name1 = ProjectName[testing1];
         String name2 = ProjectDescription[testing2];
-       // System.out.println(name1);
-      //  System.out.println(name2);
 if(check==2)
 {System.out.println("You can't take any more projects! 2 is the limit, sorry!");}
 else{
@@ -58,102 +63,87 @@ else{
     switch (Generate1_3) {
         case 0 -> {
             System.out.println("This is an easy project.");
+
             if (check == 0) {
 
                 Project1.setProjectName(name1);
-                System.out.println(Project1.getProjectName());
-
+                Project1.setWorkDaysRequired(2);
+                Project1.setDeadline(7);
                 Project1.setProjectDescription(name2);
             } else if (check == 1) {
                 Project2.setProjectName(name1);
                 Project2.setProjectDescription(name2);
+                Project2.setWorkDaysRequired(2);
+                Project2.setDeadline(7);
             }
             // if you ever see this then you deserve a cookie coz i dunno how that happened
             else {System.out.println("COŚ JEST NIE TAK SZEFUNCIU");}
 
-            check++;
             int Tier1 = randomizer.NumberGeneratorValue2(5);
             switch (Tier1) {
                 case 0:
                     if (check == 0) {
                         Project1.setFrontEnd(true);
                         System.out.println(Project1.getFrontEnd());
-                        //System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setFrontEnd(true);
-                        //System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 1:
                     if (check == 0) {
                         Project1.setBackend(true);
-                        //System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setBackend(true);
-                       // System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 2:
                     if (check == 0) {
                         Project1.setMobile(true);
-                        //System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setMobile(true);
-                       // System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 3:
                     if (check == 0) {
                         Project1.setDataBase(true);
-                       // System.out.println("Knowledge of data bases is required.");
                     } else {
                         Project2.setDataBase(true);
-                       // System.out.println("Knowledge of data bases is required.");
                     }
                     break;
                 case 4:
                     if (check == 0) {
                         Project1.setWordpress(true);
-                        //System.out.println("Knowledge of wordpress is required.");
                     } else {
                         Project2.setWordpress(true);
-                        //System.out.println("Knowledge of wordpress is required.");
                     }
                     break;
                 case 5:
                     if (check == 0) {
                         Project1.setPrestashop(true);
-                       // System.out.println("Knowledge of prestashop is required.");
                     } else {
                         Project2.setPrestashop(true);
-                       // System.out.println("Knowledge of prestashop is required.");
                     }
                     break;
             }
+            check++;
         }
         case 1 -> {
             if (check == 0) {
 
                 Project1.setProjectName(name1);
-                System.out.println(Project1.getProjectName());
-
+                Project1.setWorkDaysRequired(4);
+                Project1.setDeadline(14);
                 Project1.setProjectDescription(name2);
             } else if (check == 1) {
                 Project2.setProjectName(name1);
                 Project2.setProjectDescription(name2);
+                Project2.setWorkDaysRequired(4);
+                Project2.setDeadline(14);
             }
-            else {System.out.println("COŚ JEST ZJEBANE SZEFUNCIU");}
+            // again, free cookie
+            else {System.out.println("COŚ JEST NIE TAK SZEFUNCIU");}
 
             System.out.println("This is a medium project.");
-            if (check == 0) {
-                Project1.setProjectName(name1);
-                Project1.setProjectDescription(name2);
-            }
-            if (check == 1) {
-                Project2.setProjectName(name1);
-                Project2.setProjectDescription(name2);
-            }
-            check++;
             //this is to be EXTRA sure it's not the same...it can still happen but the margins is extremely low
             int Tier2_1;
             int Tier2_2;
@@ -166,55 +156,43 @@ else{
                 case 0:
                     if (check == 0) {
                         Project1.setFrontEnd(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setFrontEnd(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 1:
                     if (check == 0) {
                         Project1.setBackend(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setBackend(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 2:
                     if (check == 0) {
                         Project1.setMobile(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setMobile(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 3:
                     if (check == 0) {
                         Project1.setDataBase(true);
-                        System.out.println("Knowledge of data bases is required.");
                     } else {
                         Project2.setDataBase(true);
-                        System.out.println("Knowledge of data bases is required.");
                     }
                     break;
                 case 4:
                     if (check == 0) {
                         Project1.setWordpress(true);
-                        System.out.println("Knowledge of wordpress is required.");
                     } else {
                         Project2.setWordpress(true);
-                        System.out.println("Knowledge of wordpress is required.");
                     }
                     break;
                 case 5:
                     if (check == 0) {
                         Project1.setPrestashop(true);
-                        System.out.println("Knowledge of prestashop is required.");
                     } else {
                         Project2.setPrestashop(true);
-                        System.out.println("Knowledge of prestashop is required.");
                     }
                     break;
             }
@@ -222,82 +200,65 @@ else{
                 case 0:
                     if (check == 0) {
                         Project1.setFrontEnd(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setFrontEnd(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 1:
                     if (check == 0) {
                         Project1.setBackend(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setBackend(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 2:
                     if (check == 0) {
                         Project1.setMobile(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setMobile(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 3:
                     if (check == 0) {
                         Project1.setDataBase(true);
-                        System.out.println("Knowledge of data bases is required.");
                     } else {
                         Project2.setDataBase(true);
-                        System.out.println("Knowledge of data bases is required.");
                     }
                     break;
                 case 4:
                     if (check == 0) {
                         Project1.setWordpress(true);
-                        System.out.println("Knowledge of wordpress is required.");
                     } else {
                         Project2.setWordpress(true);
-                        System.out.println("Knowledge of wordpress is required.");
                     }
                     break;
                 case 5:
                     if (check == 0) {
                         Project1.setPrestashop(true);
-                        System.out.println("Knowledge of prestashop is required.");
                     } else {
                         Project2.setPrestashop(true);
-                        System.out.println("Knowledge of prestashop is required.");
                     }
                     break;
             }
+            check++;
         }
         case 2 -> {
             if (check == 0) {
 
                 Project1.setProjectName(name1);
-                System.out.println(Project1.getProjectName());
-
+                Project1.setWorkDaysRequired(6);
+                Project1.setDeadline(21);
                 Project1.setProjectDescription(name2);
             } else if (check == 1) {
                 Project2.setProjectName(name1);
                 Project2.setProjectDescription(name2);
+                Project2.setWorkDaysRequired(6);
+                Project2.setDeadline(21);
             }
             else {System.out.println("COŚ JEST ZJEBANE SZEFUNCIU");}
 
             System.out.println("This is a HARD project");
-            if (check == 0) {
-                Project1.setProjectName(name1);
-                Project1.setProjectDescription(name2);
-            }
-            if (check == 1) {
-                Project2.setProjectName(name1);
-                Project2.setProjectDescription(name2);
-            }
-            check++;
+
             Project1.setProjectName(name1);
             Project1.setProjectDescription(name2);
 int Tier3_1;
@@ -313,55 +274,43 @@ while((Tier3_1==Tier3_3)||(Tier3_2==Tier3_3)||(Tier3_1==Tier3_2));
                 case 0:
                     if (check == 0) {
                         Project1.setFrontEnd(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setFrontEnd(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 1:
                     if (check == 0) {
                         Project1.setBackend(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setBackend(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 2:
                     if (check == 0) {
                         Project1.setMobile(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setMobile(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 3:
                     if (check == 0) {
                         Project1.setDataBase(true);
-                        System.out.println("Knowledge of data bases is required.");
                     } else {
                         Project2.setDataBase(true);
-                        System.out.println("Knowledge of data bases is required.");
                     }
                     break;
                 case 4:
                     if (check == 0) {
                         Project1.setWordpress(true);
-                        System.out.println("Knowledge of wordpress is required.");
                     } else {
                         Project2.setWordpress(true);
-                        System.out.println("Knowledge of wordpress is required.");
                     }
                     break;
                 case 5:
                     if (check == 0) {
                         Project1.setPrestashop(true);
-                        System.out.println("Knowledge of prestashop is required.");
                     } else {
                         Project2.setPrestashop(true);
-                        System.out.println("Knowledge of prestashop is required.");
                     }
                     break;
             }
@@ -369,55 +318,43 @@ while((Tier3_1==Tier3_3)||(Tier3_2==Tier3_3)||(Tier3_1==Tier3_2));
                 case 0:
                     if (check == 0) {
                         Project1.setFrontEnd(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setFrontEnd(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 1:
                     if (check == 0) {
                         Project1.setBackend(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setBackend(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 2:
                     if (check == 0) {
                         Project1.setMobile(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setMobile(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 3:
                     if (check == 0) {
                         Project1.setDataBase(true);
-                        System.out.println("Knowledge of data bases is required.");
                     } else {
                         Project2.setDataBase(true);
-                        System.out.println("Knowledge of data bases is required.");
                     }
                     break;
                 case 4:
                     if (check == 0) {
                         Project1.setWordpress(true);
-                        System.out.println("Knowledge of wordpress is required.");
                     } else {
                         Project2.setWordpress(true);
-                        System.out.println("Knowledge of wordpress is required.");
                     }
                     break;
                 case 5:
                     if (check == 0) {
                         Project1.setPrestashop(true);
-                        System.out.println("Knowledge of prestashop is required.");
                     } else {
                         Project2.setPrestashop(true);
-                        System.out.println("Knowledge of prestashop is required.");
                     }
                     break;
             }
@@ -425,157 +362,117 @@ while((Tier3_1==Tier3_3)||(Tier3_2==Tier3_3)||(Tier3_1==Tier3_2));
                 case 0:
                     if (check == 0) {
                         Project1.setFrontEnd(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setFrontEnd(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 1:
                     if (check == 0) {
                         Project1.setBackend(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setBackend(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 2:
                     if (check == 0) {
                         Project1.setMobile(true);
-                        System.out.println("Knowledge of front-end is required.");
                     } else {
                         Project2.setMobile(true);
-                        System.out.println("Knowledge of front-end is required.");
                     }
                     break;
                 case 3:
                     if (check == 0) {
                         Project1.setDataBase(true);
-                        System.out.println("Knowledge of data bases is required.");
                     } else {
                         Project2.setDataBase(true);
-                        System.out.println("Knowledge of data bases is required.");
                     }
                     break;
                 case 4:
                     if (check == 0) {
                         Project1.setWordpress(true);
-                        System.out.println("Knowledge of wordpress is required.");
                     } else {
                         Project2.setWordpress(true);
-                        System.out.println("Knowledge of wordpress is required.");
                     }
                     break;
                 case 5:
                     if (check == 0) {
                         Project1.setPrestashop(true);
-                        System.out.println("Knowledge of prestashop is required.");
                     } else {
                         Project2.setPrestashop(true);
-                        System.out.println("Knowledge of prestashop is required.");
                     }
                     break;
             }
+            check++;
         }
     }
     }
     }
-/*
-// This is for forcing a project from a set difficulty level.
-// I dunno what to do about this but i'll keep it just in case
 
-
-    private void EasyProject(int project_name, int project_description){
-        System.out.println("This is an easy project.");
-       projects(project_name, project_description);
-        int Tier1 = randomizer.NumberGeneratorValue2(6);
-        System.out.println("This is an easy project.");
-        projects(project_name, project_description);
-        switch (Tier1) {
-            case 0:
-                FrontEnd = true;
-                System.out.println("Knowledge of front-end is required.");
-                break;
-            case 1:
-                Backend = true;
-                System.out.println("Knowledge of back-end is required.");
-                break;
-            case 2:
-                mobile = true;
-                System.out.println("Knowledge of android studio is required.");
-                break;
-            case 3:
-                dataBase = true;
-                System.out.println("Knowledge of data bases (creating, support etc...) is required.");
-                break;
-            case 4:
-                wordpress = true;
-                System.out.println("Knowledge of wordpress is required.");
-                break;
-            case 5:
-                prestashop = true;
-                System.out.println("Knowledge of prestashop is required.");
-                break;
-        }
-    }
-    private void MediumProject(int project_name, int project_description){
-        System.out.println("This is a medium project.");
-       projects(project_name, project_description);
-        DifficultyGenerator();
-    }
-    private void HardProject(int project_name, int project_description){
-        System.out.println("This is a HARD project");
-        projects(project_name, project_description);
-        DifficultyGenerator();
-    }
-*/
 
     // if the description is empty, this is not a bug! one of the presets is empty :3
 public void ProjectInfo(){
-    if(ProjectName==null){System.out.println("Nothing here but us, chickens!");}
-    else {
+
+
+    if((Project2.getProjectName())!=null) {
+        System.out.println("");
+System.out.println("Here is all information about your second project:");
+System.out.println("");
+        System.out.println("Project name: " + Project2.getProjectName());
+        System.out.println("Project description is: " + Project2.getProjectDescription());
+        System.out.println("Here is how big the penalty is: " + Project2.getPenalty());
+        System.out.println("Here is how long you'll have to wait for the cash: " + Project2.getPaycheckDate());
+        System.out.println("This person is your client: " + Project2.getClient());
+        System.out.println("Here is your deadline: " + Project2.getDeadline());
+        System.out.println("And here is how long you'll have to work on this project: " + Project2.getWorkDaysRequired());
+        // Oh Lord here it goes
+        if ((Project2.getDataBase())) {
+            System.out.println("data bases is a requirement.");
+        }
+        if ((Project2.getMobile())) {
+            System.out.println("Mobile stuff is a requirement.");
+        }
+        if ((Project2.getFrontEnd())) {
+            System.out.println("FrontEnd knowledge is a requirement");
+        }
+        if ((Project2.getBackend())) {
+            System.out.println("Backend knowledge is a requirement");
+        }
+        if ((Project2.getPrestashop())) {
+            System.out.println("Prestashop knowledge is a requirement");
+        }
+        if ((Project2.getWordpress())) {
+            System.out.println("Prestashop knowledge is a requirement");
+        }
+        System.out.println("");
+    }
+
+    if((Project1.getProjectName())!=null){
+    System.out.println("Here is all information about your first project:");
+    System.out.println("");
         System.out.println("Project name: " + Project1.getProjectName());
         System.out.println("Project description is: " + Project1.getProjectDescription());
         System.out.println("Here is how big the penalty is: " + Project1.getPenalty());
         System.out.println("Here is how long you'll have to wait for the cash: " + Project1.getPaycheckDate());
         System.out.println("This person is your client: " + Project1.getClient());
         System.out.println("Here is your deadline: " + Project1.getDeadline());
-        // Oh Lord here it goes
-        if ((Project1.getDataBase()) == true) {
+        System.out.println("And here is how long you'll have to work on this project: " + Project1.getWorkDaysRequired());
+        if ((Project1.getDataBase())) {
             System.out.println("data bases is a requirement.");
         }
-        if ((Project1.getMobile()) == true) {
+        if ((Project1.getMobile())) {
             System.out.println("Mobile stuff is a requirement.");
         }
-        if ((Project1.getFrontEnd())==true) {
+        if ((Project1.getFrontEnd())) {
             System.out.println("FrontEnd knowledge is a requirement");
         }
-        if ((Project1.getBackend())==true) {
+        if ((Project1.getBackend())) {
             System.out.println("Backend knowledge is a requirement");
         }
-        if ((Project1.getPrestashop())==true) {
+        if ((Project1.getPrestashop())) {
             System.out.println("Prestashop knowledge is a requirement");
         }
-        if ((Project1.getWordpress())==true) {
+        if ((Project1.getWordpress())) {
             System.out.println("Prestashop knowledge is a requirement");
         }
-        if ((Project2.getDataBase()) == true) {
-            System.out.println("data bases is a requirement.");
-        }
-        if ((Project2.getMobile()) == true) {
-            System.out.println("Mobile stuff is a requirement.");
-        }
-        if ((Project2.getFrontEnd())==true) {
-            System.out.println("FrontEnd knowledge is a requirement");
-        }
-        if ((Project2.getBackend())==true) {
-            System.out.println("Backend knowledge is a requirement");
-        }
-        if ((Project2.getPrestashop())==true) {
-            System.out.println("Prestashop knowledge is a requirement");
-        }
-        if ((Project2.getWordpress())==true) {
-            System.out.println("Prestashop knowledge is a requirement");
-        }
+        System.out.println("");
     }}}

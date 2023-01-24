@@ -11,9 +11,11 @@ public class Project {
     private boolean dataBase = false;
     private boolean wordpress = false;
     private boolean prestashop = false;
+
+    private int workDaysRequired;
     // replace this with a client object, then remove this comment you dummy :3
     private String Client;
-    private String Deadline;
+    private int Deadline;
     private int Penalty;
     private int PaycheckDate;
 
@@ -23,8 +25,8 @@ public class Project {
 
 
 
-
-
+public void setWorkDaysRequired(int WorkDaysRequired){this.workDaysRequired=WorkDaysRequired;}
+public int getWorkDaysRequired(){return workDaysRequired;}
 public void setProjectName(String ProjectName)
 {
         this.ProjectName=ProjectName;
@@ -34,7 +36,7 @@ public void setClient(String Client)
         this.Client=Client;
 }
 
-public void setDeadline(String Deadline)
+public void setDeadline(int Deadline)
     {
         this.Deadline=Deadline;
     }
@@ -101,7 +103,7 @@ public boolean getPrestashop(){
         return prestashop;
 }
 
-public String getDeadline(){
+public int getDeadline(){
         return Deadline;
 }
 public int getPenalty(){
