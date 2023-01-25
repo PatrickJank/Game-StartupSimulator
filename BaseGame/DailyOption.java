@@ -52,7 +52,8 @@ ProjectGenerator projects = new ProjectGenerator();
                 SelectedOption();}
             case 9 -> {projects.ProjectInfo();SelectedOption();}
             case 10 -> {System.out.println("This is a placeholder for hiring a contractor");;SelectedOption();}
-            case 11 -> {dates.enterDate();
+            case 11 -> {
+                new Dates();
             SelectedOption();}
         }
 

@@ -29,7 +29,7 @@ test.getDate();
 //System.out.println(test1);
 //stateOption.WelcomeScreen();
 
-*/
+
         TheGame stateOption = new TheGame();
         Scanner select = new Scanner(System.in);
         SettingsSelection color = new SettingsSelection();
@@ -38,8 +38,8 @@ test.getDate();
         NumberGenerator test = new NumberGenerator();
         TheGame TheGame = new TheGame();
 
-        TheGame.TheGame();
-        System.out.println("this is a test");
-        System.out.println("This is also a test :)");
-
-}}
+*/
+Dates dates = new Dates();
+dates.pleaseWork();
+}
+}
