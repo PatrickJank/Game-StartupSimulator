@@ -52,7 +52,8 @@ ProjectGenerator projects = new ProjectGenerator();
                 SelectedOption();}
             case 9 -> {projects.ProjectInfo();SelectedOption();}
             case 10 -> {System.out.println("This is a placeholder for hiring a contractor");;SelectedOption();}
-            case 11 -> {dates.enterDate();}
+            case 11 -> {dates.enterDate();
+            SelectedOption();}
         }
 
 
@@ -63,7 +64,9 @@ ProjectGenerator projects = new ProjectGenerator();
 
 
 
-
+// You may ask yourself Why, oh why, does this exist?
+    // My answer is simple, yet elegant: I have no idea. When I remove it everything breaks, so it has to stay.
+    // It's just like the coconut png in the TF2 files, it has to stay. Sorry.
     public void TheGame() {
     }
 }
