@@ -1,7 +1,12 @@
 package BaseGame;
+import OtherClasses.*;
+import Projects.ProjectGenerator;
+
+import java.text.SimpleDateFormat;
 import java.util.Scanner;
-import Projects.*;
-public class DailyOption {
+
+public class DailyOption extends Dates{
+    Dates test = new Dates();
 int x = 5;
 Scanner select = new Scanner(System.in);
 Testing debug = new Testing();
@@ -22,6 +27,9 @@ ProjectGenerator projects = new ProjectGenerator();
         System.out.println("10 - HIRE A SUBCONTRACTOR");
         SelectedOption();
     }
+    Dates dates = new Dates();
+
+
     public void SelectedOption(){
         int option = select.nextInt();
         switch (option) {
@@ -44,6 +52,7 @@ ProjectGenerator projects = new ProjectGenerator();
                 SelectedOption();}
             case 9 -> {projects.ProjectInfo();SelectedOption();}
             case 10 -> {System.out.println("This is a placeholder for hiring a contractor");;SelectedOption();}
+            case 11 -> {dates.enterDate();}
         }
 
 
@@ -51,6 +60,8 @@ ProjectGenerator projects = new ProjectGenerator();
 
 
     }
+
+
 
 
     public void TheGame() {

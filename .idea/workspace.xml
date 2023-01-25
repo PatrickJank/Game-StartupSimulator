@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="Daily choices are kinda working.&#10;Now the game properly starts :)">
-      <change afterPath="$PROJECT_DIR$/src/People/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/People/Workers/Programmer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/People/Workers/QATester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/People/Workers/Seller.java" afterDir="false" />
+    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="Creating multiple classes to start working on people">
+      <change afterPath="$PROJECT_DIR$/src/OtherClasses/Dates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/People/Clients/Client_Chill_Dude.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/People/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/People/Subcontractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People/Subcontractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/People/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseGame/DailyOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseGame/DailyOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OtherClasses/TheGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OtherClasses/TheGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/People/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People/Clients/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/People/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/People/Subcontractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/People/Workers/Subcontractor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674586867497</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Creating multiple classes to start working on people">
+      <created>1674588794905</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1674588794905</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,7 +252,8 @@
     <MESSAGE value="Fixed setters not working while displaying stats." />
     <MESSAGE value="added deadline and work days required variables to the project class and set them up with the difficulty generator. This is temporary as I still need to figure out how to do dates properly.&#10;A fix for check variable incorrectly counting, which would break project checks&#10;&#10;Generating projects is like 90% done already.&#10;Time to create the client class and connect it with project generators." />
     <MESSAGE value="Daily choices are kinda working.&#10;Now the game properly starts :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Daily choices are kinda working.&#10;Now the game properly starts :)" />
+    <MESSAGE value="Creating multiple classes to start working on people" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating multiple classes to start working on people" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

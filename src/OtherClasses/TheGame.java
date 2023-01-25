@@ -9,9 +9,17 @@ public class TheGame extends DailyOption {
 
     private void MainOptions(int option1) {
         if (option1 == 1) {
+            System.out.println("");
+            System.out.println("Today is the 1st of January, 2020 and it's the first day of your new adventure!");
+            System.out.println("Your new startup is up and running but it's up to you to start it all up.");
+            System.out.println("The goal of this game is simple - complete 3 HARD projects without doing any programming or testing work (yourself)");
+            System.out.println("Additonally, at lest one of these projects need to be selected by one of your workers...");
+            System.out.println("Good luck!");
+            System.out.println("");
             DailyChoice();
             SelectedOption();
-            System.out.println("");
+
+
         } else if (option1 == 2) {
             System.out.println("");
             GoToSettings.Selection();

@@ -1,10 +1,12 @@
 import java.util.Scanner;
 import BaseGame.DailyOption;
-import OtherClasses.NumberGenerator;
-import OtherClasses.TheGame;
+
 import Projects.ProjectGenerator;
 import settings.SettingsSelection;
-
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import OtherClasses.*;
 
 /*
 
@@ -16,15 +18,27 @@ Now only God knows, so here is how many hours I wasted trying to figure out stuf
  */
 public class Main {
     public static void main(String[] args) {
+/*
 
-TheGame stateOption = new TheGame();
-Scanner select = new Scanner(System.in);
-SettingsSelection color = new SettingsSelection();
-DailyOption DailyOption1 = new DailyOption();
-ProjectGenerator projects = new ProjectGenerator();
-NumberGenerator test = new NumberGenerator();
-TheGame TheGame = new TheGame();
-TheGame.TheGame();
+
+
+
+Dates test = new Dates();
+test.getDate();
+
 //System.out.println(test1);
 //stateOption.WelcomeScreen();
+
+*/
+        TheGame stateOption = new TheGame();
+        Scanner select = new Scanner(System.in);
+        SettingsSelection color = new SettingsSelection();
+        DailyOption DailyOption1 = new DailyOption();
+        ProjectGenerator projects = new ProjectGenerator();
+        NumberGenerator test = new NumberGenerator();
+        TheGame TheGame = new TheGame();
+
+        TheGame.TheGame();
+
+
 }}
