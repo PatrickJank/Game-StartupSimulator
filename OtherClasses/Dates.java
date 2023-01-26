@@ -18,21 +18,37 @@ public class Dates {
     // Get current date
     Date currentDate = new Date();
 
-
-    public void pleaseWork() {
-
-
+    //by using local time and various technics i can set a starting time, assign it to a variable and then add days off of it. Ez pz
+    public int startingYear() {
         // convert date to localdatetime
         LocalDateTime localDateTime = currentDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
-        System.out.println("localDateTime : " + dateFormat8.format(localDateTime));
-
         // plus one
-        localDateTime = localDateTime.plusYears(-3).plusMonths(0);
-        //by using local time and various technics i can set a starting time, assign it to a variable and then add days off of it. Ez pz
-       System.out.println(localDateTime.getDayOfMonth());
-        // convert LocalDateTime to date
-        Date currentDatePlusOneDay = Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
+        localDateTime = localDateTime.plusYears(-3).plusMonths(0).plusDays(0);
+        int test = localDateTime.getYear();
+        return test;
 
-        System.out.println("\nOutput : " + dateFormat.format(currentDatePlusOneDay));
+    }
+    public String startingMonth(){
+        LocalDateTime localDateTime = currentDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+        String test2 = localDateTime.getMonth().toString();
+        while(test2 != "JANUARY"){
+            localDateTime = localDateTime.plusMonths(-1);
+            test2 = localDateTime.getMonth().toString();
+        }
+        return test2;
+    }
+
+    public int startingDay(){
+        LocalDateTime localDateTime = currentDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+        // plus one
+        int test3 = localDateTime.getDayOfMonth();
+        while(test3 != 20){
+            localDateTime = localDateTime.plusDays(-1);
+            test3 = localDateTime.getDayOfMonth();
+        }
+        return test3;
     }
 }
+
+
+

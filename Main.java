@@ -30,6 +30,7 @@ test.getDate();
 //stateOption.WelcomeScreen();
 
 
+*/
         TheGame stateOption = new TheGame();
         Scanner select = new Scanner(System.in);
         SettingsSelection color = new SettingsSelection();
@@ -38,8 +39,7 @@ test.getDate();
         NumberGenerator test = new NumberGenerator();
         TheGame TheGame = new TheGame();
 
-*/
-Dates dates = new Dates();
-dates.pleaseWork();
+
+
 }
 }
