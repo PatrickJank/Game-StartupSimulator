@@ -39,6 +39,7 @@ test.getDate();
         TheGame TheGame = new TheGame();
 
         TheGame.TheGame();
-
+        System.out.println("this is a test");
+        System.out.println("This is also a test :)");
 
 }}
