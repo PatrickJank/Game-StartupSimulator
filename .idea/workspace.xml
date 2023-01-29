@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="Third date commit.&#10;Now the game starting date is read from the dates class. I can easily add days and months as the game progresses.">
+      <change afterPath="$PROJECT_DIR$/src/OtherClasses/data_test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseGame/DailyOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseGame/DailyOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OtherClasses/Dates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OtherClasses/Dates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OtherClasses/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OtherClasses/NumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OtherClasses/TheGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OtherClasses/TheGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Projects/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projects/Project.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674761277569</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Third date commit.&#10;Now the game starting date is read from the dates class. I can easily add days and months as the game progresses.">
+      <created>1675001030378</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1675001030378</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

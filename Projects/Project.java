@@ -1,8 +1,8 @@
 package Projects;
+
 public class Project {
-    
-    
-    
+
+
     private String ProjectName;
     private String ProjectDescription;
     private boolean FrontEnd = false;
@@ -22,100 +22,111 @@ public class Project {
     private int cash; // dunno what to do about this?
 
 
-
 // May Lord forgive me for this mess
 
-public void setWorkDaysRequired(int WorkDaysRequired){this.workDaysRequired=WorkDaysRequired;}
-public int getWorkDaysRequired(){return workDaysRequired;}
-public void setProjectName(String ProjectName)
-{
-        this.ProjectName=ProjectName;
-}
-public void setClient(String Client)
-{
-        this.Client=Client;
-}
-
-public void setDeadline(int Deadline)
-    {
-        this.Deadline=Deadline;
-    }
-public void setPenalty(int Penalty)
-    {
-        this.Penalty=Penalty;
-    }
-public void setPaycheckDate(int PaycheckDate)
-    {
-        this.PaycheckDate=PaycheckDate;
-    }
-public void setProjectDescription(String ProjectDescription)
-    {
-        this.ProjectDescription=ProjectDescription;
+    public void setWorkDaysRequired(int WorkDaysRequired) {
+        this.workDaysRequired = WorkDaysRequired;
     }
 
-public void setFrontEnd(boolean FrontEnd){
-        this.FrontEnd=FrontEnd;
-}
-public void setBackend(boolean Backend){
-        this.Backend=Backend;
-}
-public void setMobile(boolean mobile){
-        this.mobile=mobile;
-}
-public void setDataBase(boolean dataBase){
-        this.dataBase=dataBase;
-}
-public void setWordpress(boolean wordpress){
-        this.wordpress=wordpress;
-}
-public void setPrestashop(boolean prestashop){
-        this.prestashop=prestashop;
-}
+    public int getWorkDaysRequired() {
+        return workDaysRequired;
+    }
 
-public String getProjectName(){
+    public void setProjectName(String ProjectName) {
+        this.ProjectName = ProjectName;
+    }
+
+    public void setClient(String Client) {
+        this.Client = Client;
+    }
+
+    public void setDeadline(int Deadline) {
+        this.Deadline = Deadline;
+    }
+
+    public void setPenalty(int Penalty) {
+        this.Penalty = Penalty;
+    }
+
+    public void setPaycheckDate(int PaycheckDate) {
+        this.PaycheckDate = PaycheckDate;
+    }
+
+    public void setProjectDescription(String ProjectDescription) {
+        this.ProjectDescription = ProjectDescription;
+    }
+
+    public void setFrontEnd(boolean FrontEnd) {
+        this.FrontEnd = FrontEnd;
+    }
+
+    public void setBackend(boolean Backend) {
+        this.Backend = Backend;
+    }
+
+    public void setMobile(boolean mobile) {
+        this.mobile = mobile;
+    }
+
+    public void setDataBase(boolean dataBase) {
+        this.dataBase = dataBase;
+    }
+
+    public void setWordpress(boolean wordpress) {
+        this.wordpress = wordpress;
+    }
+
+    public void setPrestashop(boolean prestashop) {
+        this.prestashop = prestashop;
+    }
+
+    public String getProjectName() {
         return ProjectName;
-}
-public String getProjectDescription(){
-        return ProjectDescription;
-}
+    }
 
-public String getClient(){
+    public String getProjectDescription() {
+        return ProjectDescription;
+    }
+
+    public String getClient() {
         return Client;
-}
-public boolean getFrontEnd(){
+    }
+
+    public boolean getFrontEnd() {
         return FrontEnd;
-}
-public boolean getBackend(){
+    }
+
+    public boolean getBackend() {
         return Backend;
     }
-public boolean getMobile(){
+
+    public boolean getMobile() {
         return mobile;
     }
 
-public boolean getDataBase(){
+    public boolean getDataBase() {
         return dataBase;
     }
-public boolean getWordpress() {
-    return wordpress;
-}
 
-public boolean getPrestashop(){
+    public boolean getWordpress() {
+        return wordpress;
+    }
+
+    public boolean getPrestashop() {
         return prestashop;
-}
+    }
 
-public int getDeadline(){
+    public int getDeadline() {
         return Deadline;
-}
-public int getPenalty(){
+    }
+
+    public int getPenalty() {
         return Penalty;
-}
+    }
 
-public int getPaycheckDate(){
+    public int getPaycheckDate() {
         return PaycheckDate;
-}
-
-
-
+    }
 
 
 }
