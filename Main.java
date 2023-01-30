@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 import BaseGame.DailyOption;
 
+import People.Workers.Programmer;
 import Projects.ProjectGenerator;
 import settings.SettingsSelection;
 
@@ -28,10 +29,11 @@ public class Main {
         ProjectGenerator projects = new ProjectGenerator();
         NumberGenerator test = new NumberGenerator();
 
-       TheGame TheGame = new TheGame();
+       //TheGame TheGame = new TheGame();
 
-
-
+        Programmer programmer = new Programmer();
+        programmer.test();
+       // programmer.getWorkerStats();
 
 
         /*

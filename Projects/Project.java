@@ -19,8 +19,6 @@ public class Project {
     private int Penalty;
     private int PaycheckDate;
 
-    private int cash; // dunno what to do about this?
-
 
 // May Lord forgive me for this mess
 

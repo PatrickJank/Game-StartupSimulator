@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="testing git, coz it's being wonky">
+    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="Increase date by a day, for each choice the player makes.">
+      <change afterPath="$PROJECT_DIR$/Projects/ProjectCompletion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaseGame/DailyOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaseGame/DailyOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseGame/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaseGame/Stats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OtherClasses/TheGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherClasses/TheGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OtherClasses/data_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherClasses/Dates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/People/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/People/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/People/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/People/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/People/Workers/Programmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/People/Workers/Programmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/ProjectGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/ProjectGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675018464113</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Increase date by a day, for each choice the player makes.">
+      <created>1675099714031</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1675099714031</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,7 +304,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Working on the title screen" />
     <MESSAGE value="Adding settings - this will allow users to change colors." />
     <MESSAGE value="working on collors..." />
     <MESSAGE value="Finished settings. User can now select a font and background color." />
@@ -317,7 +328,8 @@
     <MESSAGE value="Third date commit.&#10;Now the game starting date is read from the dates class. I can easily add days and months as the game progresses." />
     <MESSAGE value="Another dates commit. I decided to use the calendar class. It's a bit old buuut it works, and i can easily increase the dates by simply adding days. Months and years update by themselves!&#10;Time to do workers (and hopefully after that i can start doing the actual game)" />
     <MESSAGE value="testing git, coz it's being wonky" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing git, coz it's being wonky" />
+    <MESSAGE value="Increase date by a day, for each choice the player makes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Increase date by a day, for each choice the player makes." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">

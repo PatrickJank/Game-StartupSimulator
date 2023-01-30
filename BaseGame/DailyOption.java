@@ -11,7 +11,8 @@ public class DailyOption {
     Scanner select = new Scanner(System.in);
     Testing debug = new Testing();
     ProjectGenerator projects = new ProjectGenerator();
-Dates dates = new Dates();
+    Dates dates = new Dates();
+
     public void DailyChoice() {
         System.out.print("Today's date is ");
         Dates.startingDate();
