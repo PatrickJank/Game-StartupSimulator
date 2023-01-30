@@ -28,8 +28,6 @@ public class Main {
         ProjectGenerator projects = new ProjectGenerator();
         NumberGenerator test = new NumberGenerator();
 
-
-
        TheGame TheGame = new TheGame();
 
 
@@ -37,10 +35,6 @@ public class Main {
 
 
         /*
-        data_test data_test = new data_test();
-        data_test.startingDate();
-        data_test.increase(3, 32);
-        data_test.displayDate();
 */
 
     }

@@ -11,9 +11,11 @@ public class DailyOption {
     Scanner select = new Scanner(System.in);
     Testing debug = new Testing();
     ProjectGenerator projects = new ProjectGenerator();
-
+Dates dates = new Dates();
     public void DailyChoice() {
-        System.out.println("SELECT AN ACTIVITY FOR TODAY...");
+        System.out.print("Today's date is ");
+        Dates.startingDate();
+        System.out.println(" SELECT AN ACTIVITY FOR TODAY...");
         System.out.println("");
         System.out.println("1 - SIGN A CONTRACT FOR A NEW PROJECT");
         System.out.println("2 - LOOK FOR A CLIENT - " + x + "DAYS LEFT");
@@ -26,6 +28,7 @@ public class DailyOption {
         System.out.println("9 - CHECK STATS");
         System.out.println("10 - HIRE A SUBCONTRACTOR");
         System.out.println("11 - CLOSE THE GAME (PROGRESS IS NOT SAVED)");
+        Dates.increase(1);
         SelectedOption();
     }
 
@@ -34,43 +37,51 @@ public class DailyOption {
         switch (option) {
             case 1 -> {
                 projects.DifficultyGenerator();
-                SelectedOption();
+                DailyChoice();
             }
             case 2 -> {
                 System.out.println("This is a placeholder for looking for a client");
+                DailyChoice();
                 SelectedOption();
             }
             case 3 -> {
                 System.out.println("This is a placeholder for programing stuff");
+                DailyChoice();
                 SelectedOption();
             }
             case 4 -> {
                 debug.TestingOptions();
+                DailyChoice();
                 SelectedOption();
             }
             case 5 -> {
                 System.out.println("This is a placeholder for giving the finished project");
+                DailyChoice();
                 SelectedOption();
             }
             case 6 -> {
                 System.out.println("This is a placeholder for hiring a worker");
+                DailyChoice();
                 SelectedOption();
             }
             case 7 -> {
                 System.out.println("This is a placeholder for firing a worker");
+                DailyChoice();
                 SelectedOption();
             }
             case 8 -> {
                 System.out.println("This is a placeholder for dealing with zus");
+                DailyChoice();
                 SelectedOption();
             }
             case 9 -> {
                 projects.ProjectInfo();
+                DailyChoice();
                 SelectedOption();
             }
             case 10 -> {
                 System.out.println("This is a placeholder for hiring a contractor");
-                ;
+                DailyChoice();
                 SelectedOption();
             }
             case 11 -> {
