@@ -30,10 +30,16 @@ public class ProjectGenerator extends Project {
             "Enter description so your clients will know what you need!",
             "Hiiii :). I need help ;). Pls :(. Details bellow! :o. In case of questions send me a dm on twitter! =). Also check out my deviant art page :3"};
     //Why does this exist? It's to check if there are any accepted projects.
-    private int check = 0;
+    public int check = 0;
     //Why do it like this?
     // Well, the project did not state any LIMITS to current projects, so it's easier to pre-make 2 projects and change their parameters.
     // it's easy to set the limit slightly higher at any point so it also gives the end user more input if needed (for example difficulty levels), so it's all gucci.
+
+
+    //this is to set the project check back to one, allows to override existing project after completion. This is a temporary design until i figure out what to do
+    public void setCheck(){
+        check =1;
+    }
     NumberGenerator randomizer = new NumberGenerator();
     Project Project1 = new Project();
     Project Project2 = new Project();
@@ -72,15 +78,15 @@ public class ProjectGenerator extends Project {
 
                     if (check == 0) {
 
-                        Project1.setProjectName(name1);
-                        Project1.setWorkDaysRequired(2);
-                        Project1.setDeadline(7);
-                        Project1.setProjectDescription(name2);
-                    } else if (check == 1) {
                         Project2.setProjectName(name1);
-                        Project2.setProjectDescription(name2);
                         Project2.setWorkDaysRequired(2);
                         Project2.setDeadline(7);
+                        Project2.setProjectDescription(name2);
+                    } else if (check == 1) {
+                        Project1.setProjectName(name1);
+                        Project1.setProjectDescription(name2);
+                        Project1.setWorkDaysRequired(2);
+                        Project1.setDeadline(7);
                     }
                     // if you ever see this then you deserve a cookie coz i dunno how that happened
                     else {
@@ -426,6 +432,37 @@ public class ProjectGenerator extends Project {
     // if the description is empty, this is not a bug! one of the presets is empty :3
     public void ProjectInfo() {
 
+        if ((Project1.getProjectName()) != null) {
+            System.out.println("Here is all information about your first project:");
+            System.out.println("");
+            System.out.println("Project name: " + Project1.getProjectName());
+            System.out.println("Project description is: " + Project1.getProjectDescription());
+            System.out.println("Here is how big the penalty is: " + Project1.getPenalty());
+            System.out.println("Here is how long you'll have to wait for the cash: " + Project1.getPaycheckDate());
+            System.out.println("This person is your client: " + Project1.getClient());
+            System.out.println("Here is your deadline: " + Project1.getDeadline());
+            System.out.println("And here is how long you'll have to work on this project: " + Project1.getWorkDaysRequired());
+            if ((Project1.getDataBase())) {
+                System.out.println("data bases is a requirement.");
+            }
+            if ((Project1.getMobile())) {
+                System.out.println("Mobile stuff is a requirement.");
+            }
+            if ((Project1.getFrontEnd())) {
+                System.out.println("FrontEnd knowledge is a requirement");
+            }
+            if ((Project1.getBackend())) {
+                System.out.println("Backend knowledge is a requirement");
+            }
+            if ((Project1.getPrestashop())) {
+                System.out.println("Prestashop knowledge is a requirement");
+            }
+            if ((Project1.getWordpress())) {
+                System.out.println("Prestashop knowledge is a requirement");
+            }
+            System.out.println("");
+
+
 
         if ((Project2.getProjectName()) != null) {
             System.out.println("");
@@ -460,45 +497,23 @@ public class ProjectGenerator extends Project {
             System.out.println("");
         }
 
-        if ((Project1.getProjectName()) != null) {
-            System.out.println("Here is all information about your first project:");
-            System.out.println("");
-            System.out.println("Project name: " + Project1.getProjectName());
-            System.out.println("Project description is: " + Project1.getProjectDescription());
-            System.out.println("Here is how big the penalty is: " + Project1.getPenalty());
-            System.out.println("Here is how long you'll have to wait for the cash: " + Project1.getPaycheckDate());
-            System.out.println("This person is your client: " + Project1.getClient());
-            System.out.println("Here is your deadline: " + Project1.getDeadline());
-            System.out.println("And here is how long you'll have to work on this project: " + Project1.getWorkDaysRequired());
-            if ((Project1.getDataBase())) {
-                System.out.println("data bases is a requirement.");
-            }
-            if ((Project1.getMobile())) {
-                System.out.println("Mobile stuff is a requirement.");
-            }
-            if ((Project1.getFrontEnd())) {
-                System.out.println("FrontEnd knowledge is a requirement");
-            }
-            if ((Project1.getBackend())) {
-                System.out.println("Backend knowledge is a requirement");
-            }
-            if ((Project1.getPrestashop())) {
-                System.out.println("Prestashop knowledge is a requirement");
-            }
-            if ((Project1.getWordpress())) {
-                System.out.println("Prestashop knowledge is a requirement");
-            }
-            System.out.println("");
+
         }
 
     }
 
+
+    // TO DO:
+    // FIX PROJECT INFO NOT UPDATING PROPERLY WHILE COLLECTIGN ANOTHER PROJECT. IT STILL DISPLAYS OLD PROJECT
     public void workOnAProject() {
         System.out.println("PLEASE SELECT THE PROJECT YOU WANT TO WORK ON");
         int decision = select.nextInt();
         switch(decision){
         case 1:
             Project1.workOnAProject();
+            if(Project1.getProjectStatus() == true){
+                setCheck();
+            }
             break;
             case 2:
                 Project2.workOnAProject();

@@ -50,6 +50,7 @@ public class DailyOption {
             case 3 -> {
 
                 projects.workOnAProject();
+
                 Dates.increase(1);
                 DailyChoice();
                 SelectedOption();
