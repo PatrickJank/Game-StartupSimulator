@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="Working on randomizing people with each game iteration. Should be around 18 people total so i plan on using a list (currently trying to figure it out)">
+    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="Creating a method for working on a project, and setting it up with the daily choices.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaseGame/DailyOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaseGame/DailyOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OtherClasses/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherClasses/NumberGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/People/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/People/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/ProjectCompletion.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Projects/ProjectGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/ProjectGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -294,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675109089697</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Creating a method for working on a project, and setting it up with the daily choices.">
+      <created>1675190896341</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1675190896341</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,7 +311,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="working on collors..." />
     <MESSAGE value="Finished settings. User can now select a font and background color." />
     <MESSAGE value="Created daily options, as well as a base for testing option" />
     <MESSAGE value="Creating templates for projects and all humans..." />
@@ -334,7 +335,8 @@
     <MESSAGE value="testing git, coz it's being wonky" />
     <MESSAGE value="Increase date by a day, for each choice the player makes." />
     <MESSAGE value="Working on randomizing people with each game iteration. Should be around 18 people total so i plan on using a list (currently trying to figure it out)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on randomizing people with each game iteration. Should be around 18 people total so i plan on using a list (currently trying to figure it out)" />
+    <MESSAGE value="Creating a method for working on a project, and setting it up with the daily choices." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating a method for working on a project, and setting it up with the daily choices." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">

@@ -30,7 +30,6 @@ public class DailyOption {
         System.out.println("10 - HIRE A SUBCONTRACTOR");
         System.out.println("11 - CLOSE THE GAME (PROGRESS IS NOT SAVED)");
         System.out.println("");
-        Dates.increase(1);
         SelectedOption();
     }
 
@@ -39,41 +38,49 @@ public class DailyOption {
         switch (option) {
             case 1 -> {
                 projects.DifficultyGenerator();
+                Dates.increase(1);
                 DailyChoice();
             }
             case 2 -> {
                 System.out.println("This is a placeholder for looking for a client");
+                Dates.increase(1);
                 DailyChoice();
                 SelectedOption();
             }
             case 3 -> {
 
                 projects.workOnAProject();
+                Dates.increase(1);
                 DailyChoice();
                 SelectedOption();
             }
             case 4 -> {
                 debug.TestingOptions();
+                Dates.increase(1);
                 DailyChoice();
                 SelectedOption();
             }
             case 5 -> {
                 System.out.println("This is a placeholder for giving the finished project");
+                Dates.increase(1);
                 DailyChoice();
                 SelectedOption();
             }
             case 6 -> {
                 System.out.println("This is a placeholder for hiring a worker");
+                Dates.increase(1);
                 DailyChoice();
                 SelectedOption();
             }
             case 7 -> {
                 System.out.println("This is a placeholder for firing a worker");
+                Dates.increase(1);
                 DailyChoice();
                 SelectedOption();
             }
             case 8 -> {
                 System.out.println("This is a placeholder for dealing with zus");
+                Dates.increase(1);
                 DailyChoice();
                 SelectedOption();
             }
@@ -84,6 +91,7 @@ public class DailyOption {
             }
             case 10 -> {
                 System.out.println("This is a placeholder for hiring a contractor");
+                Dates.increase(1);
                 DailyChoice();
                 SelectedOption();
             }

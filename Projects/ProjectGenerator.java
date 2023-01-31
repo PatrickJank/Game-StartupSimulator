@@ -2,6 +2,8 @@ package Projects;
 
 import OtherClasses.NumberGenerator;
 
+import java.util.Scanner;
+
 public class ProjectGenerator extends Project {
     private final String[] ProjectName = {"Create a Website for our shop!",
             "Create me a mobile game!",
@@ -35,14 +37,15 @@ public class ProjectGenerator extends Project {
     NumberGenerator randomizer = new NumberGenerator();
     Project Project1 = new Project();
     Project Project2 = new Project();
-
+    Scanner select = new Scanner(System.in);
     Project Project3 = new Project();
     Project Project4 = new Project();
     Project Project5 = new Project();
 
     /*
   Current design:
-   * give a week for EACH technology in the project. This means 5 working days (currently i don't count weekends but we will see)
+   * give a week for EACH technology in the project. This means 5 working days (currently i don't count weekends but we will see if i can set this up)
+   Maybe read date and if it is saturday or sunday stop workers from doing stuff?
    * How long the player will be required to spend on each technology?
      Let's say 2 WORKING days. This can be adjusted with difficulty levels.
    *
@@ -490,11 +493,20 @@ public class ProjectGenerator extends Project {
 
     }
 
-    public void workOnAProject(int decision) {
-        if (decision == 1) {
+    public void workOnAProject() {
+        System.out.println("PLEASE SELECT THE PROJECT YOU WANT TO WORK ON");
+        int decision = select.nextInt();
+        switch(decision){
+        case 1:
             Project1.workOnAProject();
-        } else {
-            Project2.workOnAProject();
+            break;
+            case 2:
+                Project2.workOnAProject();
+                break;
+            default:
+                System.out.println("SELECT A VALID OPTION");
+                workOnAProject();
+                break;
         }
     }
 
