@@ -19,8 +19,12 @@ public class Worker extends Person {
             int valueTwo = randomizer.NumberGeneratorValue2(10);
             workerNames.add(Name[valueOne]);
             workerSurames.add(Surname[valueTwo]);
-            workerNames.indexOf(i);
-            workerSurames.indexOf(i);
         }
+
+        for (String workerNames : workerNames) {
+            System.out.println(workerNames);
+        }
+        System.out.println("test");
+        System.out.println(workerNames.get(0));
     }
 }

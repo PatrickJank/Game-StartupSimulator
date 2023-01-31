@@ -35,6 +35,7 @@ public class ProjectGenerator extends Project {
     NumberGenerator randomizer = new NumberGenerator();
     Project Project1 = new Project();
     Project Project2 = new Project();
+
     Project Project3 = new Project();
     Project Project4 = new Project();
     Project Project5 = new Project();
@@ -63,6 +64,7 @@ public class ProjectGenerator extends Project {
             int Generate1_3 = randomizer.NumberGeneratorValue2(2);
             switch (Generate1_3) {
                 case 0 -> {
+                    setProjectStatus(false);
                     System.out.println("This is an easy project.");
 
                     if (check == 0) {
@@ -131,6 +133,7 @@ public class ProjectGenerator extends Project {
                     check++;
                 }
                 case 1 -> {
+                    setProjectStatus(false);
                     if (check == 0) {
 
                         Project1.setProjectName(name1);
@@ -159,6 +162,7 @@ public class ProjectGenerator extends Project {
                     while (Tier2_1 == Tier2_2);
                     switch (Tier2_1) {
                         case 0:
+
                             if (check == 0) {
                                 Project1.setFrontEnd(true);
                             } else {
@@ -248,6 +252,7 @@ public class ProjectGenerator extends Project {
                     check++;
                 }
                 case 2 -> {
+                    setProjectStatus(false);
                     if (check == 0) {
 
                         Project1.setProjectName(name1);
@@ -482,5 +487,15 @@ public class ProjectGenerator extends Project {
             }
             System.out.println("");
         }
+
     }
+
+    public void workOnAProject(int decision) {
+        if (decision == 1) {
+            Project1.workOnAProject();
+        } else {
+            Project2.workOnAProject();
+        }
+    }
+
 }

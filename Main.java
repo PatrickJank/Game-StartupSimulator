@@ -1,16 +1,11 @@
-import java.util.Scanner;
-
 import BaseGame.DailyOption;
-
+import OtherClasses.NumberGenerator;
+import OtherClasses.TheGame;
 import People.Workers.Programmer;
 import Projects.ProjectGenerator;
 import settings.SettingsSelection;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import OtherClasses.*;
+import java.util.Scanner;
 
 /*
 This is a mess. When I started making this game, God and I knew how it worked.
@@ -29,10 +24,10 @@ public class Main {
         ProjectGenerator projects = new ProjectGenerator();
         NumberGenerator test = new NumberGenerator();
 
-       //TheGame TheGame = new TheGame();
+       TheGame TheGame = new TheGame();
 
-        Programmer programmer = new Programmer();
-        programmer.test();
+        //Programmer programmer = new Programmer();
+        //programmer.test();
        // programmer.getWorkerStats();
 
 

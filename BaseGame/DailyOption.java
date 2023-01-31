@@ -29,6 +29,7 @@ public class DailyOption {
         System.out.println("9 - CHECK STATS");
         System.out.println("10 - HIRE A SUBCONTRACTOR");
         System.out.println("11 - CLOSE THE GAME (PROGRESS IS NOT SAVED)");
+        System.out.println("");
         Dates.increase(1);
         SelectedOption();
     }
@@ -46,7 +47,8 @@ public class DailyOption {
                 SelectedOption();
             }
             case 3 -> {
-                System.out.println("This is a placeholder for programing stuff");
+
+                projects.workOnAProject();
                 DailyChoice();
                 SelectedOption();
             }

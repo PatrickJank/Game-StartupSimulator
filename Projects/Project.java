@@ -1,8 +1,11 @@
 package Projects;
 
+import OtherClasses.NumberGenerator;
+
 public class Project {
 
-
+    NumberGenerator generator = new NumberGenerator();
+    int bugCount = 0;
     private String ProjectName;
     private String ProjectDescription;
     private boolean FrontEnd = false;
@@ -18,9 +21,12 @@ public class Project {
     private int Deadline;
     private int Penalty;
     private int PaycheckDate;
+    private boolean projectStatus;
 
 
 // May Lord forgive me for this mess
+
+    public void setProjectStatus(boolean projectStatus){ this.projectStatus = projectStatus;}
 
     public void setWorkDaysRequired(int WorkDaysRequired) {
         this.workDaysRequired = WorkDaysRequired;
@@ -126,5 +132,21 @@ public class Project {
         return PaycheckDate;
     }
 
+    public boolean getProjectStatus() {
+        return projectStatus;
+    }
+
+    public void workOnAProject() {
+        int b = generator.NumberGeneratorValue2(10);
+        this.workDaysRequired = workDaysRequired-1;
+        if (getWorkDaysRequired() == 0) {
+            System.out.println("Project has been completed!");
+            setProjectStatus(true);
+        }
+        if(b <= 1 ){
+            bugCount++;
+        }
+
+    }
 
 }

@@ -6,8 +6,7 @@ public class NumberGenerator {
     private Random rd = new Random();
 
 
-//This generates from 0 to a max value. It ALWAYS starts from 0.
-    // I tried other generators but I had so many exceptions my computer started crying
+//This generates from 0 to a max value. It ALWAYS starts from 0. This is why i add "1" to it.
 
     public int NumberGeneratorValue2(int max) {
         int rand_int = rd.nextInt(max + 1);
