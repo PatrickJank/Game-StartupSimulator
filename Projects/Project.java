@@ -5,7 +5,7 @@ import OtherClasses.NumberGenerator;
 public class Project {
 
     NumberGenerator generator = new NumberGenerator();
-    int bugCount = 0;
+   public int bugCount = 0;
     private String ProjectName;
     private String ProjectDescription;
     private boolean FrontEnd = false;
@@ -148,5 +148,34 @@ public class Project {
         }
 
     }
+
+    public int getBugCount(){
+        return this.bugCount;
+    }
+    private void setBugCount(int bugCount){
+        this.bugCount = bugCount;
+    }
+    public void projectEmpty(){
+        ProjectName = null;
+        ProjectDescription = null;
+        FrontEnd = false;
+        Backend = false;
+        mobile = false;
+        dataBase = false;
+        wordpress = false;
+        prestashop = false;
+        workDaysRequired = Integer.parseInt(null);
+        Client = null;
+        Deadline = Integer.parseInt(null);
+        Penalty  = Integer.parseInt(null);
+        PaycheckDate  = Integer.parseInt(null);
+        projectStatus = false;
+    }
+    public boolean bugFound;
+    public void fixBugs(){
+
+        setBugCount(0);
+    }
+
 
 }

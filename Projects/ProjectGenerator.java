@@ -37,9 +37,10 @@ public class ProjectGenerator extends Project {
 
 
     //this is to set the project check back to one, allows to override existing project after completion. This is a temporary design until i figure out what to do
-    public void setCheck(){
-        check =1;
+    public void setCheck() {
+        check = 1;
     }
+
     NumberGenerator randomizer = new NumberGenerator();
     Project Project1 = new Project();
     Project Project2 = new Project();
@@ -58,15 +59,25 @@ public class ProjectGenerator extends Project {
   Side note: i still need to figure out how to do dates.
 */
 
+    //this is to check wheater or not a project exists. Technically this should also check if a project is completed, and empty the pre-made template
+
+    public void projectCheck() {
+        if (Project1.getProjectStatus() == true) {
+            Project1.projectEmpty();
+        }
+        if (Project2.getProjectStatus() == true) {
+            Project2.projectEmpty();
+        }
+        check++;
+    }
+
 
     // use this to actually generate a random project.
     // This uses 2 pre-made class objects,
     // then assign generated values to them
+
     public void DifficultyGenerator() {
-        int testing1 = (randomizer.NumberGeneratorValue2(11));
-        int testing2 = (randomizer.NumberGeneratorValue2(11));
-        String name1 = ProjectName[testing1];
-        String name2 = ProjectDescription[testing2];
+
         if (check == 2) {
             System.out.println("You can't take any more projects! 2 is the limit, sorry!");
         } else {
@@ -77,12 +88,19 @@ public class ProjectGenerator extends Project {
                     System.out.println("This is an easy project.");
 
                     if (check == 0) {
-
+                        int testing1 = (randomizer.NumberGeneratorValue2(11));
+                        int testing2 = (randomizer.NumberGeneratorValue2(11));
+                        String name1 = ProjectName[testing1];
+                        String name2 = ProjectDescription[testing2];
                         Project2.setProjectName(name1);
                         Project2.setWorkDaysRequired(2);
                         Project2.setDeadline(7);
                         Project2.setProjectDescription(name2);
                     } else if (check == 1) {
+                        int testing1 = (randomizer.NumberGeneratorValue2(11));
+                        int testing2 = (randomizer.NumberGeneratorValue2(11));
+                        String name1 = ProjectName[testing1];
+                        String name2 = ProjectDescription[testing2];
                         Project1.setProjectName(name1);
                         Project1.setProjectDescription(name2);
                         Project1.setWorkDaysRequired(2);
@@ -97,6 +115,7 @@ public class ProjectGenerator extends Project {
                     switch (Tier1) {
                         case 0:
                             if (check == 0) {
+
                                 Project1.setFrontEnd(true);
                                 System.out.println(Project1.getFrontEnd());
                             } else {
@@ -144,12 +163,19 @@ public class ProjectGenerator extends Project {
                 case 1 -> {
                     setProjectStatus(false);
                     if (check == 0) {
-
+                        int testing1 = (randomizer.NumberGeneratorValue2(11));
+                        int testing2 = (randomizer.NumberGeneratorValue2(11));
+                        String name1 = ProjectName[testing1];
+                        String name2 = ProjectDescription[testing2];
                         Project1.setProjectName(name1);
                         Project1.setWorkDaysRequired(4);
                         Project1.setDeadline(14);
                         Project1.setProjectDescription(name2);
                     } else if (check == 1) {
+                        int testing1 = (randomizer.NumberGeneratorValue2(11));
+                        int testing2 = (randomizer.NumberGeneratorValue2(11));
+                        String name1 = ProjectName[testing1];
+                        String name2 = ProjectDescription[testing2];
                         Project2.setProjectName(name1);
                         Project2.setProjectDescription(name2);
                         Project2.setWorkDaysRequired(4);
@@ -263,22 +289,33 @@ public class ProjectGenerator extends Project {
                 case 2 -> {
                     setProjectStatus(false);
                     if (check == 0) {
-
+                        int testing1 = (randomizer.NumberGeneratorValue2(11));
+                        int testing2 = (randomizer.NumberGeneratorValue2(11));
+                        String name1 = ProjectName[testing1];
+                        String name2 = ProjectDescription[testing2];
                         Project1.setProjectName(name1);
                         Project1.setWorkDaysRequired(6);
                         Project1.setDeadline(21);
                         Project1.setProjectDescription(name2);
                     } else if (check == 1) {
+                        int testing1 = (randomizer.NumberGeneratorValue2(11));
+                        int testing2 = (randomizer.NumberGeneratorValue2(11));
+                        String name1 = ProjectName[testing1];
+                        String name2 = ProjectDescription[testing2];
                         Project2.setProjectName(name1);
                         Project2.setProjectDescription(name2);
                         Project2.setWorkDaysRequired(6);
                         Project2.setDeadline(21);
                     } else {
-                        System.out.println("COŚ JEST ZJEBANE SZEFUNCIU");
+                        // don't judge me, this is a debug option. If it appears then something is broken
+                        System.out.println("COŚ JEST NIE TAK SZEFUNCIU");
                     }
 
                     System.out.println("This is a HARD project");
-
+                    int testing1 = (randomizer.NumberGeneratorValue2(11));
+                    int testing2 = (randomizer.NumberGeneratorValue2(11));
+                    String name1 = ProjectName[testing1];
+                    String name2 = ProjectDescription[testing2];
                     Project1.setProjectName(name1);
                     Project1.setProjectDescription(name2);
                     int Tier3_1;
@@ -463,39 +500,38 @@ public class ProjectGenerator extends Project {
             System.out.println("");
 
 
-
-        if ((Project2.getProjectName()) != null) {
-            System.out.println("");
-            System.out.println("Here is all information about your second project:");
-            System.out.println("");
-            System.out.println("Project name: " + Project2.getProjectName());
-            System.out.println("Project description is: " + Project2.getProjectDescription());
-            System.out.println("Here is how big the penalty is: " + Project2.getPenalty());
-            System.out.println("Here is how long you'll have to wait for the cash: " + Project2.getPaycheckDate());
-            System.out.println("This person is your client: " + Project2.getClient());
-            System.out.println("Here is your deadline: " + Project2.getDeadline());
-            System.out.println("And here is how long you'll have to work on this project: " + Project2.getWorkDaysRequired());
-            // Oh Lord here it goes
-            if ((Project2.getDataBase())) {
-                System.out.println("data bases is a requirement.");
+            if ((Project2.getProjectName()) != null) {
+                System.out.println("");
+                System.out.println("Here is all information about your second project:");
+                System.out.println("");
+                System.out.println("Project name: " + Project2.getProjectName());
+                System.out.println("Project description is: " + Project2.getProjectDescription());
+                System.out.println("Here is how big the penalty is: " + Project2.getPenalty());
+                System.out.println("Here is how long you'll have to wait for the cash: " + Project2.getPaycheckDate());
+                System.out.println("This person is your client: " + Project2.getClient());
+                System.out.println("Here is your deadline: " + Project2.getDeadline());
+                System.out.println("And here is how long you'll have to work on this project: " + Project2.getWorkDaysRequired());
+                // Oh Lord here it goes
+                if ((Project2.getDataBase())) {
+                    System.out.println("data bases is a requirement.");
+                }
+                if ((Project2.getMobile())) {
+                    System.out.println("Mobile stuff is a requirement.");
+                }
+                if ((Project2.getFrontEnd())) {
+                    System.out.println("FrontEnd knowledge is a requirement");
+                }
+                if ((Project2.getBackend())) {
+                    System.out.println("Backend knowledge is a requirement");
+                }
+                if ((Project2.getPrestashop())) {
+                    System.out.println("Prestashop knowledge is a requirement");
+                }
+                if ((Project2.getWordpress())) {
+                    System.out.println("Prestashop knowledge is a requirement");
+                }
+                System.out.println("");
             }
-            if ((Project2.getMobile())) {
-                System.out.println("Mobile stuff is a requirement.");
-            }
-            if ((Project2.getFrontEnd())) {
-                System.out.println("FrontEnd knowledge is a requirement");
-            }
-            if ((Project2.getBackend())) {
-                System.out.println("Backend knowledge is a requirement");
-            }
-            if ((Project2.getPrestashop())) {
-                System.out.println("Prestashop knowledge is a requirement");
-            }
-            if ((Project2.getWordpress())) {
-                System.out.println("Prestashop knowledge is a requirement");
-            }
-            System.out.println("");
-        }
 
 
         }
@@ -506,23 +542,70 @@ public class ProjectGenerator extends Project {
     // TO DO:
     // FIX PROJECT INFO NOT UPDATING PROPERLY WHILE COLLECTIGN ANOTHER PROJECT. IT STILL DISPLAYS OLD PROJECT
     public void workOnAProject() {
-        System.out.println("PLEASE SELECT THE PROJECT YOU WANT TO WORK ON");
-        int decision = select.nextInt();
-        switch(decision){
-        case 1:
-            Project1.workOnAProject();
-            if(Project1.getProjectStatus() == true){
-                setCheck();
+        System.out.println("WHAT DO YOU WISH TO DO");
+        System.out.println("1 - FIX BUGS");
+        System.out.println("2 - WORK ON A PROJECT");
+        int decision2 = select.nextInt();
+        if (decision2 == 2) {
+            System.out.println("");
+            System.out.println("PLEASE SELECT THE PROJECT YOU WANT TO WORK ON");
+            System.out.println("1 - FIRST PROJECT");
+            System.out.println("2 - SECOND PROJECT");
+            int decision = select.nextInt();
+            switch (decision) {
+                case 1:
+                    Project1.workOnAProject();
+                    if (Project1.getProjectStatus() == true) {
+                        setCheck();
+                    }
+                    if (Project2.getProjectStatus() == true) {
+                        setCheck();
+                    }
+                    break;
+                case 2:
+                    Project2.workOnAProject();
+                    break;
+                default:
+                    System.out.println("SELECT A VALID OPTION");
+                    workOnAProject();
+                    break;
             }
-            break;
-            case 2:
-                Project2.workOnAProject();
-                break;
-            default:
-                System.out.println("SELECT A VALID OPTION");
-                workOnAProject();
-                break;
         }
+        if(decision2==1){
+            System.out.println("");
+            System.out.println("PLEASE SELECT THE PROJECT YOU WANT TO FIX");
+            System.out.println("1 - FIRST PROJECT");
+            System.out.println("2 - SECOND PROJECT");
+            int decision = select.nextInt();
+            switch (decision) {
+                case 1:
+                    Project1.fixBugs();
+                    break;
+                case 2:
+                    Project2.fixBugs();
+                    break;
+                default:
+                    System.out.println("SELECT A VALID OPTION");
+                    workOnAProject();
+                    break;
+        }
+
+
     }
+
+}
+
+
+
+public void testingForBugs(){
+if(Project1.getBugCount()>0){
+    Project1.bugFound = true;
+} else if (Project2.getBugCount()>0) {
+    Project2.bugFound = true;
+}
+}
+
+
+
 
 }
