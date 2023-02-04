@@ -40,7 +40,9 @@ public class Worker extends Person {
     Seller seller = new Seller();
 
     Subcontractor contractor = new Subcontractor();
+
     public void HireAWorker() {
+        Workers();
         System.out.println("WHO DO YOU WANT TO HIRE?");
         System.out.println("1 - PROGRAMMER");
         System.out.println("2 - TESTER");
@@ -100,6 +102,7 @@ public class Worker extends Person {
 
 
     public void FireAWorker() {
+        Workers();
         System.out.println("WHO DO YOU WANT TO FIRE?");
         System.out.println("1 - PROGRAMMER");
         System.out.println("2 - TESTER");
@@ -177,58 +180,36 @@ public class Worker extends Person {
     }
 
     public void HireAContractor() {
-        System.out.println("DO YOU WISH TO HIRE A CONTRACTOR? THEY WILL HELP YOU ON YOUR PROJECT WITH PROGRAMMING, FIXING AND TESTING HOWEVER THEY WILL COST A LOT");
-        System.out.println("1 - YES");
-        System.out.println("2 - NO");
-        try {
-            int option = select.nextInt();
-            switch (option) {
-                case 1:
-                    if (!contractor.isHired) {
-                        contractor.Name = workerNames.get(0);
-                        contractor.Surname = workerSuranes.get(0);
-                        contractor.cash = 750;
-                        contractor.isHired = true;
-                    }
-                    else
-                    {
-                        System.out.println("SORRY BUT YOU CANNOT DO THAT");
-                    }
-                    break;
-                case 2:
-
-                    break;
-                default:
-                    System.out.println("ENTER VALID OPTION!");
-                    HireAContractor();
-                    break;
-            }
-        } catch (Exception InputMismatchException) {
-            System.out.println("Please use valid inputs");
-            HireAContractor();
-        }
+        System.out.println("A CONTRACTOR HAS BEEN HIRED THEY WILL HELP YOU ON YOUR PROJECT WITH PROGRAMMING AND FIXING HOWEVER THEY WILL COST A LOT");
+        Workers();
+        if (!contractor.isHired) {
+            contractor.Name = workerNames.get(10);
+            contractor.Surname = workerSuranes.get(10);
+            contractor.cash = 750;
+            contractor.isHired = true;
+        } else System.out.println("NOT POSSIBLE TO HIRE ANOTHER CONTRACTOR");
     }
 
-    public void ContractorWorking(){
-        if(contractor.isHired) {
+
+    public void ContractorWorking() {
+        if (contractor.isHired) {
             projectGenerator.workerWorking();
-            projectGenerator.workerTesting();
         }
     }
 
-    public void workerPayment(){
-        if(programmer1.isHired)
-            stats.cash-= programmer1.cash;
-        if(programmer2.isHired)
-            stats.cash-= programmer2.cash;
-        if(programmer3.isHired)
-            stats.cash-= programmer3.cash;
-        if(tester1.isHired)
-            stats.cash-= tester1.cash;
-        if(seller.isHired)
-            stats.cash-= seller.cash;
-        if(contractor.isHired)
-            stats.cash-= contractor.cash;
+    public void workerPayment() {
+        if (programmer1.isHired)
+            stats.cash -= programmer1.cash;
+        if (programmer2.isHired)
+            stats.cash -= programmer2.cash;
+        if (programmer3.isHired)
+            stats.cash -= programmer3.cash;
+        if (tester1.isHired)
+            stats.cash -= tester1.cash;
+        if (seller.isHired)
+            stats.cash -= seller.cash;
+        if (contractor.isHired)
+            stats.cash -= contractor.cash;
     }
 }
 
