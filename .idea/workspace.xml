@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="quick fix for contractors not being properly implemented">
+    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="Another quick fix, this time for worker names/surnames. There were crashing the game because the list was not properly set up.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaseGame/DailyOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaseGame/DailyOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseGame/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaseGame/Stats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/People/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/People/Worker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -348,7 +349,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675538640212</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="setting up payments to workers">
+      <created>1675539055784</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1675539055784</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Another quick fix, this time for worker names/surnames. There were crashing the game because the list was not properly set up.">
+      <created>1675539861211</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1675539861211</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -363,8 +378,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trying to create a class for actual projects. this will assign generated projects to it." />
-    <MESSAGE value="trying to create a class for actual projects. this will assign generated projects to it.&#10;Side note: i have no idea what i'm doing after ~9 hours of non-stop code" />
     <MESSAGE value="more work on project class" />
     <MESSAGE value="even more work on project class&#10;it is kinda working now so hopefully tomorrow i can start working on other stuff" />
     <MESSAGE value="Fixed setters not working while displaying stats." />
@@ -388,7 +401,9 @@
     <MESSAGE value="Slowly finishing the project. Now it is possible to give the completed project and get a reward/penalty" />
     <MESSAGE value="Game is as finished as it's gonna be." />
     <MESSAGE value="quick fix for contractors not being properly implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="quick fix for contractors not being properly implemented" />
+    <MESSAGE value="setting up payments to workers" />
+    <MESSAGE value="Another quick fix, this time for worker names/surnames. There were crashing the game because the list was not properly set up." />
+    <option name="LAST_COMMIT_MESSAGE" value="Another quick fix, this time for worker names/surnames. There were crashing the game because the list was not properly set up." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">

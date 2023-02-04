@@ -156,6 +156,7 @@ public class DailyOption extends ProjectGenerator {
                 case 9 -> {
                     check();
                     ProjectInfo();
+                    stats.statInfo();
                     DailyChoice();
                     SelectedOption();
                 }

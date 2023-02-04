@@ -12,13 +12,12 @@ public class Stats {
     ProjectGenerator projectGenerator = new ProjectGenerator();
     //starting value. Workers are paid weekly so every 7 days, cash is depleted by a specific value.
     public int cash = 1000;
-    public int currentWorkers;
+    public int currentWorkers=0;
 
     public int daysWasted = 0;
     public void statInfo() {
-        projectGenerator.ProjectInfo();
-        System.out.println(cash);
-        System.out.println(currentWorkers);
+        System.out.println("YOUR CURRENT CASH IS: "+cash);
+        System.out.println("YOU CURRENTLY HAVE "+currentWorkers+ " WORKERS");
     }
 
 
