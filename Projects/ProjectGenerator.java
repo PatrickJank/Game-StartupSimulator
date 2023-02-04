@@ -1,8 +1,10 @@
 package Projects;
 
 import OtherClasses.NumberGenerator;
+import art.AsciiPictures;
 
 import java.util.Scanner;
+import art.AsciiPictures;
 
 public class ProjectGenerator extends Project {
     private final String[] ProjectName = {"Create a Website for our shop!",
@@ -40,11 +42,15 @@ public class ProjectGenerator extends Project {
     public void setCheck() {
         check = 1;
     }
-
+AsciiPictures art = new AsciiPictures();
     NumberGenerator randomizer = new NumberGenerator();
     Project Project1 = new Project();
     Project Project2 = new Project();
     Scanner select = new Scanner(System.in);
+
+
+    // These are the pre-made projects the player can find during their playthrough. They are also rendered at the start of the game.
+
     Project Project3 = new Project();
     Project Project4 = new Project();
     Project Project5 = new Project();
@@ -579,10 +585,18 @@ public class ProjectGenerator extends Project {
             int decision = select.nextInt();
             switch (decision) {
                 case 1:
-                    Project1.fixBugs();
+                    if(bugFound==true) {
+                        Project1.fixBugs();
+                    }
+                    else
+                        System.out.println("YOU DID NOT FIND ANY ISSUEES TO FIX.");
                     break;
                 case 2:
-                    Project2.fixBugs();
+                    if(bugFound==true) {
+                        Project1.fixBugs();
+                    }
+                    else
+                        System.out.println("YOU DID NOT FIND ANY ISSUEES TO FIX.");
                     break;
                 default:
                     System.out.println("SELECT A VALID OPTION");
@@ -602,6 +616,10 @@ if(Project1.getBugCount()>0){
     Project1.bugFound = true;
 } else if (Project2.getBugCount()>0) {
     Project2.bugFound = true;
+}
+if((Project1.getBugCount()<1)||(Project2.getBugCount())<1){
+    System.out.println("THERE ARE NO BUGS! GOOD JOB! HERE IS A MOUSE DEER FOR YOU");
+    art.myszojeleń();
 }
 }
 

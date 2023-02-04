@@ -68,7 +68,15 @@ public class TheGame extends DailyOption {
     public TheGame() {
         WelcomeScreen();
         while (readInput1 != 1) {
-            readInput1 = select.nextInt();
+            try {
+                readInput1 = select.nextInt();
+            }
+            catch (Exception InputMismatchException)
+            {
+            //System.out.println("Please use valid inputs");
+                readInput1 = select.nextInt();
+            }
+
             MainOptions(readInput1);
         }
 

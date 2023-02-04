@@ -14,6 +14,7 @@ Now only God knows, so here is how many hours I wasted trying to figure out stuf
 - How to create setters and getters for project class, without doing them one by one (I ended up doing them one by one) - ~2 hours
 - creating a generator for the Godforsaken projects: ~3 days
 - setting up dates, and a way to change time - too many days to admit.
+- Work on projects, fix bugs, test stuff - 2 days
  */
 
 public class Main {
@@ -24,7 +25,19 @@ public class Main {
         ProjectGenerator projects = new ProjectGenerator();
         NumberGenerator test = new NumberGenerator();
 
-       TheGame TheGame = new TheGame();
+
+
+        try {
+            TheGame TheGame = new TheGame();
+        }
+        catch (Exception InputMismatchException)
+        {
+            System.out.println("Please use valid inputs.");
+            TheGame TheGame = new TheGame();
+        }
+
+
+
 
         //Programmer programmer = new Programmer();
         //programmer.test();

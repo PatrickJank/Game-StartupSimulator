@@ -12,6 +12,40 @@ public class AsciiPictures {
         System.out.println("      V      ");
     }
 
+    public void myszojeleń(){
+        System.out.println("                                                                            ");
+        System.out.println("                                             (((.             /#            ");
+        System.out.println("                                             (****/#       *###             ");
+        System.out.println("                                               //*****#%%%%%%%%%#           ");
+        System.out.println("                                                #(/*****%%%(####%           ");
+        System.out.println("                                                #%%%%%%%%%%*#%%%(%          ");
+        System.out.println("                            .,.                 %%%%%%%%%,@@@@@%%%%%        ");
+        System.out.println("                 /%%%%%%%%%%%%%%%%%%%%%%%%      ,%%%%%%###(#%%%%%%%%%%%/    ");
+        System.out.println("             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#  %%%%%########(#%%%%%%%(    ");
+        System.out.println("          *%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%####   /(            ");
+        System.out.println("         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%###  ##             ");
+        System.out.println("       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%##  .#             ");
+        System.out.println("      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%##(  #/            ");
+        System.out.println("      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#### /             ");
+        System.out.println("     (%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%####( #             ");
+        System.out.println("     *%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%######               ");
+        System.out.println("      %%%%%%%%%%%%%%%%%######%%%%%%%%%%%%%%%%%%%%%%%%%#####(.               ");
+        System.out.println("       %%%%%%%%%%%%%%%%%%########%%%%%%%%%%%%%%%%%%%#####(                  ");
+        System.out.println("          %%%%%%%%%%%%%%%%%##########(%%%%%%%%%%%%%%(#####                  ");
+        System.out.println("           %%%%%%%%%%%%%##############%%%%%%%%%%###,                        ");
+        System.out.println("            %%%%%%%%%%#####(          %%%%%%%###                            ");
+        System.out.println("         %%%%%%%%%%%(#&&&              %%%%%%###                            ");
+        System.out.println("      %%%%%%%%%&&&&*                    %%%%%(##                            ");
+        System.out.println("       %%%%%&&                           %%%%###                            ");
+        System.out.println("       %%%%&                              %%%##(                            ");
+        System.out.println("         %%%#                             %% ##/                            ");
+        System.out.println("         (%%&                             %% ##/                            ");
+        System.out.println("          %%%&                            %% (#(                            ");
+        System.out.println("           %%%%                           %%  ##                            ");
+        System.out.println("            /%%                          .%%   #(                           ");
+        System.out.println("            ..%%/,.,,..,,,.,,,,,,,,,,,,,..%%%,,#&,,,.,,.                    ");
+        System.out.println(" ,,,,,,,,,,,,,,,%%%,,,,,,,,,,,,,,,,,,,,,,,.%%@.,,,,,,,,,,,,,,,,,,,          ");
+    }
 
 
 }

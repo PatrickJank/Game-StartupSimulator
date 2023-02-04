@@ -145,6 +145,7 @@ public class Project {
         }
         if(b <= 1 ){
             bugCount++;
+            System.out.println("BUG FOUND");
         }
 
     }
@@ -172,6 +173,7 @@ public class Project {
         projectStatus = false;
     }
     public boolean bugFound;
+    public boolean testingDone;
     public void fixBugs(){
 
         setBugCount(0);

@@ -21,15 +21,12 @@ ProjectGenerator test2 = new ProjectGenerator();
             if(test2.bugFound==true){
                 test2.testingForBugs();
                 BugDetected.bugArt();
+                test2.bugFound = true;
             }
             else{
-                System.out.println("Nothing detected!");
+                System.out.println("THERE ARE NO BUGS! GOOD JOB! HERE IS A MOUSE DEER FOR YOU");
+                BugDetected.myszojeleń();
             }
-
-
-
-
-
                 break;
             case 2:
                 System.out.println("PLACEHOLDER");

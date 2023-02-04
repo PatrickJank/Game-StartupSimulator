@@ -34,6 +34,7 @@ public class DailyOption {
     }
 
     public void SelectedOption() {
+        try {
         int option = select.nextInt();
         switch (option) {
             case 1 -> {
@@ -99,6 +100,12 @@ public class DailyOption {
             case 11 -> {
                 System.exit(0);
             }
+        }
+        }
+        catch (Exception InputMismatchException)
+        {
+            System.out.println("Please use valid inputs");
+            SelectedOption();
         }
 
 
