@@ -1,5 +1,6 @@
 package Projects;
 
+import BaseGame.DailyOption;
 import OtherClasses.NumberGenerator;
 import art.AsciiPictures;
 
@@ -44,16 +45,16 @@ public class ProjectGenerator extends Project {
     }
 AsciiPictures art = new AsciiPictures();
     NumberGenerator randomizer = new NumberGenerator();
-    Project Project1 = new Project();
-    Project Project2 = new Project();
+    public Project Project1 = new Project();
+    public Project Project2 = new Project();
     Scanner select = new Scanner(System.in);
 
 
     // These are the pre-made projects the player can find during their playthrough. They are also rendered at the start of the game.
 
-    Project Project3 = new Project();
-    Project Project4 = new Project();
-    Project Project5 = new Project();
+    public Project Project3 = new Project();
+    public Project Project4 = new Project();
+    public Project Project5 = new Project();
 
     /*
   Current design:
@@ -84,9 +85,7 @@ AsciiPictures art = new AsciiPictures();
 
     public void DifficultyGenerator() {
 
-        if (check == 2) {
-            System.out.println("You can't take any more projects! 2 is the limit, sorry!");
-        } else {
+ {
             int Generate1_3 = randomizer.NumberGeneratorValue2(2);
             switch (Generate1_3) {
                 case 0 -> {
@@ -471,6 +470,577 @@ AsciiPictures art = new AsciiPictures();
         }
     }
 
+// and this is for generating projects 3-5
+
+
+
+    public void moreProjects3()  {
+            int Generate1_3 = randomizer.NumberGeneratorValue2(2);
+            switch (Generate1_3) {
+                case 0 -> {
+                    setProjectStatus(false);
+                        int testing1 = (randomizer.NumberGeneratorValue2(11));
+                        int testing2 = (randomizer.NumberGeneratorValue2(11));
+                        String name1 = ProjectName[testing1];
+                        String name2 = ProjectDescription[testing2];
+                        Project3.setProjectName(name1);
+                        Project3.setWorkDaysRequired(2);
+                        Project3.setDeadline(7);
+                        Project3.setProjectDescription(name2);
+                    int Tier1 = randomizer.NumberGeneratorValue2(5);
+                    switch (Tier1) {
+                        case 0:
+                                Project3.setFrontEnd(true);
+                            break;
+                        case 1:
+                                Project3.setBackend(true);
+                            break;
+                        case 2:
+                                Project3.setMobile(true);
+                            break;
+                        case 3:
+                                Project3.setDataBase(true);
+                            break;
+                        case 4:
+                                Project3.setWordpress(true);
+                            break;
+                        case 5:
+
+                                Project2.setPrestashop(true);
+                            break;
+                    }
+                }
+                case 1 -> {
+                    setProjectStatus(false);
+                        int testing1 = (randomizer.NumberGeneratorValue2(11));
+                        int testing2 = (randomizer.NumberGeneratorValue2(11));
+                        String name1 = ProjectName[testing1];
+                        String name2 = ProjectDescription[testing2];
+                        Project3.setProjectName(name1);
+                        Project3.setWorkDaysRequired(4);
+                        Project3.setDeadline(14);
+                        Project3.setProjectDescription(name2);
+
+                    System.out.println("This is a medium project.");
+                    //this is to be EXTRA sure it's not the same...it can still happen but the margins is extremely low
+                    int Tier2_1;
+                    int Tier2_2;
+                    do {
+                        Tier2_1 = randomizer.NumberGeneratorValue2(5);
+                        Tier2_2 = randomizer.NumberGeneratorValue2(5);
+                    }
+                    while (Tier2_1 == Tier2_2);
+                    switch (Tier2_1) {
+                        case 0:
+                            Project3.setFrontEnd(true);
+                            break;
+                        case 1:
+                            Project3.setBackend(true);
+                            break;
+                        case 2:
+                            Project3.setMobile(true);
+                            break;
+                        case 3:
+                            Project3.setDataBase(true);
+                            break;
+                        case 4:
+                            Project3.setWordpress(true);
+                            break;
+                        case 5:
+
+                            Project3.setPrestashop(true);
+                            break;
+                    }
+                    switch (Tier2_2) {
+                        case 0:
+                            Project3.setFrontEnd(true);
+                            break;
+                        case 1:
+                            Project3.setBackend(true);
+                            break;
+                        case 2:
+                            Project3.setMobile(true);
+                            break;
+                        case 3:
+                            Project3.setDataBase(true);
+                            break;
+                        case 4:
+                            Project3.setWordpress(true);
+                            break;
+                        case 5:
+
+                            Project3.setPrestashop(true);
+                            break;
+                    }
+                }
+                case 2 -> {
+                    setProjectStatus(false);
+                        int testing1 = (randomizer.NumberGeneratorValue2(11));
+                        int testing2 = (randomizer.NumberGeneratorValue2(11));
+                        String name1 = ProjectName[testing1];
+                        String name2 = ProjectDescription[testing2];
+                        Project3.setProjectName(name1);
+                        Project3.setWorkDaysRequired(6);
+                        Project3.setDeadline(21);
+                        Project3.setProjectDescription(name2);
+                    System.out.println("This is a HARD project");
+                    int Tier3_1;
+                    int Tier3_2;
+                    int Tier3_3;
+                    do {
+                        Tier3_1 = randomizer.NumberGeneratorValue2(5);
+                        Tier3_2 = randomizer.NumberGeneratorValue2(5);
+                        Tier3_3 = randomizer.NumberGeneratorValue2(5);
+                    }
+                    while ((Tier3_1 == Tier3_3) || (Tier3_2 == Tier3_3) || (Tier3_1 == Tier3_2));
+                    switch (Tier3_1) {
+                        case 0:
+                            Project3.setFrontEnd(true);
+                            break;
+                        case 1:
+                            Project3.setBackend(true);
+                            break;
+                        case 2:
+                            Project3.setMobile(true);
+                            break;
+                        case 3:
+                            Project3.setDataBase(true);
+                            break;
+                        case 4:
+                            Project3.setWordpress(true);
+                            break;
+                        case 5:
+
+                            Project3.setPrestashop(true);
+                            break;
+                    }
+                    switch (Tier3_2) {
+                        case 0:
+                            Project3.setFrontEnd(true);
+                            break;
+                        case 1:
+                            Project3.setBackend(true);
+                            break;
+                        case 2:
+                            Project3.setMobile(true);
+                            break;
+                        case 3:
+                            Project3.setDataBase(true);
+                            break;
+                        case 4:
+                            Project3.setWordpress(true);
+                            break;
+                        case 5:
+
+                            Project3.setPrestashop(true);
+                            break;
+                    }
+                    switch (Tier3_3) {
+                        case 0:
+                            Project3.setFrontEnd(true);
+                            break;
+                        case 1:
+                            Project3.setBackend(true);
+                            break;
+                        case 2:
+                            Project3.setMobile(true);
+                            break;
+                        case 3:
+                            Project3.setDataBase(true);
+                            break;
+                        case 4:
+                            Project3.setWordpress(true);
+                            break;
+                        case 5:
+
+                            Project3.setPrestashop(true);
+                            break;
+                    }
+                }
+            }
+        }
+    public void moreProjects4()  {
+        int Generate1_3 = randomizer.NumberGeneratorValue2(2);
+        switch (Generate1_3) {
+            case 0 -> {
+                setProjectStatus(false);
+                int testing1 = (randomizer.NumberGeneratorValue2(11));
+                int testing2 = (randomizer.NumberGeneratorValue2(11));
+                String name1 = ProjectName[testing1];
+                String name2 = ProjectDescription[testing2];
+                Project4.setProjectName(name1);
+                Project4.setWorkDaysRequired(2);
+                Project4.setDeadline(7);
+                Project4.setProjectDescription(name2);
+                int Tier1 = randomizer.NumberGeneratorValue2(5);
+                switch (Tier1) {
+                    case 0:
+                        Project4.setFrontEnd(true);
+                        break;
+                    case 1:
+                        Project4.setBackend(true);
+                        break;
+                    case 2:
+                        Project4.setMobile(true);
+                        break;
+                    case 3:
+                        Project4.setDataBase(true);
+                        break;
+                    case 4:
+                        Project4.setWordpress(true);
+                        break;
+                    case 5:
+
+                        Project4.setPrestashop(true);
+                        break;
+                }
+            }
+            case 1 -> {
+                setProjectStatus(false);
+                int testing1 = (randomizer.NumberGeneratorValue2(11));
+                int testing2 = (randomizer.NumberGeneratorValue2(11));
+                String name1 = ProjectName[testing1];
+                String name2 = ProjectDescription[testing2];
+                Project4.setProjectName(name1);
+                Project4.setWorkDaysRequired(4);
+                Project4.setDeadline(14);
+                Project4.setProjectDescription(name2);
+
+                System.out.println("This is a medium project.");
+                //this is to be EXTRA sure it's not the same...it can still happen but the margins is extremely low
+                int Tier2_1;
+                int Tier2_2;
+                do {
+                    Tier2_1 = randomizer.NumberGeneratorValue2(5);
+                    Tier2_2 = randomizer.NumberGeneratorValue2(5);
+                }
+                while (Tier2_1 == Tier2_2);
+                switch (Tier2_1) {
+                    case 0:
+                        Project4.setFrontEnd(true);
+                        break;
+                    case 1:
+                        Project4.setBackend(true);
+                        break;
+                    case 2:
+                        Project4.setMobile(true);
+                        break;
+                    case 3:
+                        Project4.setDataBase(true);
+                        break;
+                    case 4:
+                        Project4.setWordpress(true);
+                        break;
+                    case 5:
+
+                        Project4.setPrestashop(true);
+                        break;
+                }
+                switch (Tier2_2) {
+                    case 0:
+                        Project4.setFrontEnd(true);
+                        break;
+                    case 1:
+                        Project4.setBackend(true);
+                        break;
+                    case 2:
+                        Project4.setMobile(true);
+                        break;
+                    case 3:
+                        Project4.setDataBase(true);
+                        break;
+                    case 4:
+                        Project4.setWordpress(true);
+                        break;
+                    case 5:
+
+                        Project4.setPrestashop(true);
+                        break;
+                }
+            }
+            case 2 -> {
+                setProjectStatus(false);
+                int testing1 = (randomizer.NumberGeneratorValue2(11));
+                int testing2 = (randomizer.NumberGeneratorValue2(11));
+                String name1 = ProjectName[testing1];
+                String name2 = ProjectDescription[testing2];
+                Project4.setProjectName(name1);
+                Project4.setWorkDaysRequired(6);
+                Project4.setDeadline(21);
+                Project4.setProjectDescription(name2);
+                System.out.println("This is a HARD project");
+                int Tier3_1;
+                int Tier3_2;
+                int Tier3_3;
+                do {
+                    Tier3_1 = randomizer.NumberGeneratorValue2(5);
+                    Tier3_2 = randomizer.NumberGeneratorValue2(5);
+                    Tier3_3 = randomizer.NumberGeneratorValue2(5);
+                }
+                while ((Tier3_1 == Tier3_3) || (Tier3_2 == Tier3_3) || (Tier3_1 == Tier3_2));
+                switch (Tier3_1) {
+                    case 0:
+                        Project4.setFrontEnd(true);
+                        break;
+                    case 1:
+                        Project4.setBackend(true);
+                        break;
+                    case 2:
+                        Project4.setMobile(true);
+                        break;
+                    case 3:
+                        Project4.setDataBase(true);
+                        break;
+                    case 4:
+                        Project4.setWordpress(true);
+                        break;
+                    case 5:
+
+                        Project4.setPrestashop(true);
+                        break;
+                }
+                switch (Tier3_2) {
+                    case 0:
+                        Project4.setFrontEnd(true);
+                        break;
+                    case 1:
+                        Project4.setBackend(true);
+                        break;
+                    case 2:
+                        Project4.setMobile(true);
+                        break;
+                    case 3:
+                        Project4.setDataBase(true);
+                        break;
+                    case 4:
+                        Project4.setWordpress(true);
+                        break;
+                    case 5:
+
+                        Project4.setPrestashop(true);
+                        break;
+                }
+                switch (Tier3_3) {
+                    case 0:
+                        Project4.setFrontEnd(true);
+                        break;
+                    case 1:
+                        Project4.setBackend(true);
+                        break;
+                    case 2:
+                        Project4.setMobile(true);
+                        break;
+                    case 3:
+                        Project4.setDataBase(true);
+                        break;
+                    case 4:
+                        Project4.setWordpress(true);
+                        break;
+                    case 5:
+
+                        Project4.setPrestashop(true);
+                        break;
+                }
+            }
+        }
+    }
+    public void moreProjects5()  {
+        int Generate1_3 = randomizer.NumberGeneratorValue2(2);
+        switch (Generate1_3) {
+            case 0 -> {
+                setProjectStatus(false);
+                int testing1 = (randomizer.NumberGeneratorValue2(11));
+                int testing2 = (randomizer.NumberGeneratorValue2(11));
+                String name1 = ProjectName[testing1];
+                String name2 = ProjectDescription[testing2];
+                Project5.setProjectName(name1);
+                Project5.setWorkDaysRequired(2);
+                Project5.setDeadline(7);
+                Project5.setProjectDescription(name2);
+                int Tier1 = randomizer.NumberGeneratorValue2(5);
+                switch (Tier1) {
+                    case 0:
+                        Project5.setFrontEnd(true);
+                        break;
+                    case 1:
+                        Project5.setBackend(true);
+                        break;
+                    case 2:
+                        Project5.setMobile(true);
+                        break;
+                    case 3:
+                        Project5.setDataBase(true);
+                        break;
+                    case 4:
+                        Project5.setWordpress(true);
+                        break;
+                    case 5:
+
+                        Project5.setPrestashop(true);
+                        break;
+                }
+            }
+            case 1 -> {
+                setProjectStatus(false);
+                int testing1 = (randomizer.NumberGeneratorValue2(11));
+                int testing2 = (randomizer.NumberGeneratorValue2(11));
+                String name1 = ProjectName[testing1];
+                String name2 = ProjectDescription[testing2];
+                Project5.setProjectName(name1);
+                Project5.setWorkDaysRequired(4);
+                Project5.setDeadline(14);
+                Project5.setProjectDescription(name2);
+
+                System.out.println("This is a medium project.");
+                //this is to be EXTRA sure it's not the same...it can still happen but the margins is extremely low
+                int Tier2_1;
+                int Tier2_2;
+                do {
+                    Tier2_1 = randomizer.NumberGeneratorValue2(5);
+                    Tier2_2 = randomizer.NumberGeneratorValue2(5);
+                }
+                while (Tier2_1 == Tier2_2);
+                switch (Tier2_1) {
+                    case 0:
+                        Project5.setFrontEnd(true);
+                        break;
+                    case 1:
+                        Project5.setBackend(true);
+                        break;
+                    case 2:
+                        Project5.setMobile(true);
+                        break;
+                    case 3:
+                        Project5.setDataBase(true);
+                        break;
+                    case 4:
+                        Project5.setWordpress(true);
+                        break;
+                    case 5:
+
+                        Project5.setPrestashop(true);
+                        break;
+                }
+                switch (Tier2_2) {
+                    case 0:
+                        Project5.setFrontEnd(true);
+                        break;
+                    case 1:
+                        Project5.setBackend(true);
+                        break;
+                    case 2:
+                        Project5.setMobile(true);
+                        break;
+                    case 3:
+                        Project5.setDataBase(true);
+                        break;
+                    case 4:
+                        Project5.setWordpress(true);
+                        break;
+                    case 5:
+
+                        Project5.setPrestashop(true);
+                        break;
+                }
+            }
+            case 2 -> {
+                setProjectStatus(false);
+                int testing1 = (randomizer.NumberGeneratorValue2(11));
+                int testing2 = (randomizer.NumberGeneratorValue2(11));
+                String name1 = ProjectName[testing1];
+                String name2 = ProjectDescription[testing2];
+                Project5.setProjectName(name1);
+                Project5.setWorkDaysRequired(6);
+                Project5.setDeadline(21);
+                Project5.setProjectDescription(name2);
+                System.out.println("This is a HARD project");
+                int Tier3_1;
+                int Tier3_2;
+                int Tier3_3;
+                do {
+                    Tier3_1 = randomizer.NumberGeneratorValue2(5);
+                    Tier3_2 = randomizer.NumberGeneratorValue2(5);
+                    Tier3_3 = randomizer.NumberGeneratorValue2(5);
+                }
+                while ((Tier3_1 == Tier3_3) || (Tier3_2 == Tier3_3) || (Tier3_1 == Tier3_2));
+                switch (Tier3_1) {
+                    case 0:
+                        Project5.setFrontEnd(true);
+                        break;
+                    case 1:
+                        Project5.setBackend(true);
+                        break;
+                    case 2:
+                        Project5.setMobile(true);
+                        break;
+                    case 3:
+                        Project5.setDataBase(true);
+                        break;
+                    case 4:
+                        Project5.setWordpress(true);
+                        break;
+                    case 5:
+
+                        Project5.setPrestashop(true);
+                        break;
+                }
+                switch (Tier3_2) {
+                    case 0:
+                        Project5.setFrontEnd(true);
+                        break;
+                    case 1:
+                        Project5.setBackend(true);
+                        break;
+                    case 2:
+                        Project5.setMobile(true);
+                        break;
+                    case 3:
+                        Project5.setDataBase(true);
+                        break;
+                    case 4:
+                        Project5.setWordpress(true);
+                        break;
+                    case 5:
+
+                        Project5.setPrestashop(true);
+                        break;
+                }
+                switch (Tier3_3) {
+                    case 0:
+                        Project5.setFrontEnd(true);
+                        break;
+                    case 1:
+                        Project5.setBackend(true);
+                        break;
+                    case 2:
+                        Project5.setMobile(true);
+                        break;
+                    case 3:
+                        Project5.setDataBase(true);
+                        break;
+                    case 4:
+                        Project5.setWordpress(true);
+                        break;
+                    case 5:
+
+                        Project5.setPrestashop(true);
+                        break;
+                }
+            }
+        }
+    }
+
+    public void lookForAProject(){
+if (Project3.getProjectName() == null) {
+moreProjects3();
+        } else if (Project4.getProjectName() == null) {
+        moreProjects4();
+        }
+        else if (Project5.getProjectName() == null){
+            moreProjects5();
+        }
+        else System.out.println("YOU CANNOT DO THAT");
+    }
 
     // if the description is empty, this is not a bug! one of the presets is empty :3
     public void ProjectInfo() {
@@ -504,7 +1074,7 @@ AsciiPictures art = new AsciiPictures();
                 System.out.println("Prestashop knowledge is a requirement");
             }
             System.out.println("");
-
+        }
 
             if ((Project2.getProjectName()) != null) {
                 System.out.println("");
@@ -540,36 +1110,176 @@ AsciiPictures art = new AsciiPictures();
             }
 
 
+        if ((Project3.getProjectName()) != null) {
+            System.out.println("");
+            System.out.println("Here is all information about your third project:");
+            System.out.println("");
+            System.out.println("Project name: " + Project3.getProjectName());
+            System.out.println("Project description is: " + Project3.getProjectDescription());
+            System.out.println("Here is how big the penalty is: " + Project3.getPenalty());
+            System.out.println("Here is how long you'll have to wait for the cash: " + Project3.getPaycheckDate());
+            System.out.println("This person is your client: " + Project3.getClient());
+            System.out.println("Here is your deadline: " + Project3.getDeadline());
+            System.out.println("And here is how long you'll have to work on this project: " + Project3.getWorkDaysRequired());
+            // Oh Lord here it goes
+            if ((Project3.getDataBase())) {
+                System.out.println("data bases is a requirement.");
+            }
+            if ((Project3.getMobile())) {
+                System.out.println("Mobile stuff is a requirement.");
+            }
+            if ((Project3.getFrontEnd())) {
+                System.out.println("FrontEnd knowledge is a requirement");
+            }
+            if ((Project3.getBackend())) {
+                System.out.println("Backend knowledge is a requirement");
+            }
+            if ((Project3.getPrestashop())) {
+                System.out.println("Prestashop knowledge is a requirement");
+            }
+            if ((Project3.getWordpress())) {
+                System.out.println("Prestashop knowledge is a requirement");
+            }
+            System.out.println("");
         }
 
-    }
 
+        if ((Project4.getProjectName()) != null) {
+            System.out.println("");
+            System.out.println("Here is all information about your fourth project:");
+            System.out.println("");
+            System.out.println("Project name: " + Project4.getProjectName());
+            System.out.println("Project description is: " + Project4.getProjectDescription());
+            System.out.println("Here is how big the penalty is: " + Project4.getPenalty());
+            System.out.println("Here is how long you'll have to wait for the cash: " + Project4.getPaycheckDate());
+            System.out.println("This person is your client: " + Project4.getClient());
+            System.out.println("Here is your deadline: " + Project4.getDeadline());
+            System.out.println("And here is how long you'll have to work on this project: " + Project4.getWorkDaysRequired());
+            // Oh Lord here it goes
+            if ((Project4.getDataBase())) {
+                System.out.println("data bases is a requirement.");
+            }
+            if ((Project4.getMobile())) {
+                System.out.println("Mobile stuff is a requirement.");
+            }
+            if ((Project4.getFrontEnd())) {
+                System.out.println("FrontEnd knowledge is a requirement");
+            }
+            if ((Project4.getBackend())) {
+                System.out.println("Backend knowledge is a requirement");
+            }
+            if ((Project4.getPrestashop())) {
+                System.out.println("Prestashop knowledge is a requirement");
+            }
+            if ((Project4.getWordpress())) {
+                System.out.println("Prestashop knowledge is a requirement");
+            }
+            System.out.println("");
+        }
+
+        if ((Project5.getProjectName()) != null) {
+            System.out.println("");
+            System.out.println("Here is all information about your fourth project:");
+            System.out.println("");
+            System.out.println("Project name: " + Project5.getProjectName());
+            System.out.println("Project description is: " + Project5.getProjectDescription());
+            System.out.println("Here is how big the penalty is: " + Project5.getPenalty());
+            System.out.println("Here is how long you'll have to wait for the cash: " + Project5.getPaycheckDate());
+            System.out.println("This person is your client: " + Project5.getClient());
+            System.out.println("Here is your deadline: " + Project5.getDeadline());
+            System.out.println("And here is how long you'll have to work on this project: " + Project5.getWorkDaysRequired());
+            // Oh Lord here it goes
+            if ((Project5.getDataBase())) {
+                System.out.println("data bases is a requirement.");
+            }
+            if ((Project5.getMobile())) {
+                System.out.println("Mobile stuff is a requirement.");
+            }
+            if ((Project5.getFrontEnd())) {
+                System.out.println("FrontEnd knowledge is a requirement");
+            }
+            if ((Project5.getBackend())) {
+                System.out.println("Backend knowledge is a requirement");
+            }
+            if ((Project5.getPrestashop())) {
+                System.out.println("Prestashop knowledge is a requirement");
+            }
+            if ((Project5.getWordpress())) {
+                System.out.println("Prestashop knowledge is a requirement");
+            }
+            System.out.println("");
+        }
+
+
+    }
+    DailyOption dailyOption = new DailyOption();
 
     // TO DO:
     // FIX PROJECT INFO NOT UPDATING PROPERLY WHILE COLLECTIGN ANOTHER PROJECT. IT STILL DISPLAYS OLD PROJECT
     public void workOnAProject() {
+        if(Project1.getProjectName() == null){
+            System.out.println("Sorry, but you don't have anything to work on!");
+            dailyOption.DailyChoice();
+            dailyOption.SelectedOption();
+        }
         System.out.println("WHAT DO YOU WISH TO DO");
         System.out.println("1 - FIX BUGS");
         System.out.println("2 - WORK ON A PROJECT");
         int decision2 = select.nextInt();
+
+
+
         if (decision2 == 2) {
             System.out.println("");
             System.out.println("PLEASE SELECT THE PROJECT YOU WANT TO WORK ON");
+
             System.out.println("1 - FIRST PROJECT");
-            System.out.println("2 - SECOND PROJECT");
+
+            if(Project2.getProjectName() == null){
+                System.out.println("2 - SECOND PROJECT");
+            }
+            if(Project3.getProjectName() == null){
+                System.out.println("3 - THIRD PROJECT");
+            }
+            if(Project4.getProjectName() == null){
+                System.out.println("4 - FOURTH PROJECT");
+            }
+            if(Project5.getProjectName() == null){
+                System.out.println("5 - FIFTH PROJECT");
+            }
+
             int decision = select.nextInt();
             switch (decision) {
                 case 1:
+                    if(Project1.getProjectName()!= null)
                     Project1.workOnAProject();
-                    if (Project1.getProjectStatus() == true) {
-                        setCheck();
-                    }
-                    if (Project2.getProjectStatus() == true) {
-                        setCheck();
-                    }
+                    else
+                        System.out.println("SORRY BUT NO");
                     break;
                 case 2:
-                    Project2.workOnAProject();
+
+                    if(Project2.getProjectName()!= null)
+                        Project2.workOnAProject();
+                    else
+                        System.out.println("SORRY BUT NO");
+                    break;
+                case 3:
+                    if(Project3.getProjectName()!= null)
+                        Project3.workOnAProject();
+                    else
+                        System.out.println("SORRY BUT NO");
+                    break;
+                case 4:
+                    if(Project4.getProjectName()!= null)
+                        Project4.workOnAProject();
+                    else
+                        System.out.println("SORRY BUT NO");
+                    break;
+                case 5:
+                    if(Project5.getProjectName()!= null)
+                        Project5.workOnAProject();
+                    else
+                        System.out.println("SORRY BUT NO");
                     break;
                 default:
                     System.out.println("SELECT A VALID OPTION");
@@ -577,23 +1287,66 @@ AsciiPictures art = new AsciiPictures();
                     break;
             }
         }
+
+/*
+
+
+  */
+
+
         if(decision2==1){
             System.out.println("");
             System.out.println("PLEASE SELECT THE PROJECT YOU WANT TO FIX");
+
             System.out.println("1 - FIRST PROJECT");
-            System.out.println("2 - SECOND PROJECT");
+
+            if(Project2.getProjectName() == null){
+                System.out.println("2 - SECOND PROJECT");
+            }
+            if(Project3.getProjectName() == null){
+                System.out.println("3 - THIRD PROJECT");
+            }
+            if(Project4.getProjectName() == null){
+                System.out.println("4 - FOURTH PROJECT");
+            }
+            if(Project5.getProjectName() == null){
+                System.out.println("5 - FIFTH PROJECT");
+            }
+
             int decision = select.nextInt();
             switch (decision) {
                 case 1:
-                    if(bugFound==true) {
+                    if(Project1.bugFound==true) {
                         Project1.fixBugs();
                     }
                     else
                         System.out.println("YOU DID NOT FIND ANY ISSUEES TO FIX.");
                     break;
                 case 2:
-                    if(bugFound==true) {
-                        Project1.fixBugs();
+
+                    if(Project2.bugFound==true) {
+                        Project2.fixBugs();
+                    }
+                    else
+                        System.out.println("YOU DID NOT FIND ANY ISSUEES TO FIX.");
+                    break;
+                case 3:
+                    if(Project3.bugFound==true) {
+                        Project3.fixBugs();
+                    }
+                    else
+                        System.out.println("YOU DID NOT FIND ANY ISSUEES TO FIX.");
+                    break;
+                case 4:
+                    if(Project4.bugFound==true) {
+                        Project4.fixBugs();
+                    }
+                    else
+                        System.out.println("YOU DID NOT FIND ANY ISSUEES TO FIX.");
+                    break;
+                case 5:
+                    if(Project5.bugFound==true) {
+                        Project5.fixBugs();
                     }
                     else
                         System.out.println("YOU DID NOT FIND ANY ISSUEES TO FIX.");
@@ -602,7 +1355,8 @@ AsciiPictures art = new AsciiPictures();
                     System.out.println("SELECT A VALID OPTION");
                     workOnAProject();
                     break;
-        }
+            }
+
 
 
     }
@@ -616,8 +1370,14 @@ if(Project1.getBugCount()>0){
     Project1.bugFound = true;
 } else if (Project2.getBugCount()>0) {
     Project2.bugFound = true;
+} else if (Project3.getBugCount()>0){
+    Project3.bugFound = true;
+} else if (Project4.getBugCount()>0){
+    Project4.bugFound = true;
+} else if (Project5.getBugCount()>0){
+    Project5.bugFound = true;
 }
-if((Project1.getBugCount()<1)||(Project2.getBugCount())<1){
+if((Project1.getBugCount()<1)&&(Project2.getBugCount()<1)&&(Project3.getBugCount()<1)&&(Project4.getBugCount()<1)&&(Project5.getBugCount()<1)){
     System.out.println("THERE ARE NO BUGS! GOOD JOB! HERE IS A MOUSE DEER FOR YOU");
     art.myszojeleń();
 }

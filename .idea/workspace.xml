@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="More work on projects. Now the user can:&#10;* work on a project&#10;* fix bugs&#10;* detect bugs&#10;Tomorrow i'll start working on clients and workers. After this the project should be mostly done!">
+    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="Added mouse deer ascii for...reasons...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaseGame/DailyOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaseGame/DailyOption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaseGame/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaseGame/Testing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OtherClasses/TheGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherClasses/TheGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OtherClasses/Dates.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherClasses/Dates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/People/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/People/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/People/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/People/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/People/Workers/Programmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/People/Workers/Programmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/People/Workers/QATester.java" beforeDir="false" afterPath="$PROJECT_DIR$/People/Workers/QATester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/People/Workers/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/People/Workers/Seller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/People/Workers/Subcontractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/People/Workers/Subcontractor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projects/ProjectGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/ProjectGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/art/AsciiPictures.java" beforeDir="false" afterPath="$PROJECT_DIR$/art/AsciiPictures.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675279761936</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Added mouse deer ascii for...reasons...">
+      <created>1675523421894</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1675523421894</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,7 +350,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creating templates for projects and all humans... part2" />
     <MESSAGE value="Created a template for random numbers. Also working on randomizing projects, so far there are random names" />
     <MESSAGE value="More work on random projects. Now there are random titles and descriptions each time!" />
     <MESSAGE value="More work on randomizing projects, CL12" />
@@ -365,7 +374,8 @@
     <MESSAGE value="Creating a method for working on a project, and setting it up with the daily choices.&#10;Part2" />
     <MESSAGE value="Working on completing projects" />
     <MESSAGE value="More work on projects. Now the user can:&#10;* work on a project&#10;* fix bugs&#10;* detect bugs&#10;Tomorrow i'll start working on clients and workers. After this the project should be mostly done!" />
-    <option name="LAST_COMMIT_MESSAGE" value="More work on projects. Now the user can:&#10;* work on a project&#10;* fix bugs&#10;* detect bugs&#10;Tomorrow i'll start working on clients and workers. After this the project should be mostly done!" />
+    <MESSAGE value="Added mouse deer ascii for...reasons..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mouse deer ascii for...reasons..." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">

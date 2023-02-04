@@ -22,5 +22,9 @@ public void displayDate(){
     System.out.println(sdf.format(calendar.getTime()));
 }
 
+public int zusCheck(){
+    return calendar.get(3);
+}
+
 
 }
