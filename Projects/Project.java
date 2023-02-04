@@ -139,15 +139,13 @@ public class Project {
     public void workOnAProject() {
         int b = generator.NumberGeneratorValue2(10);
         this.workDaysRequired = workDaysRequired-1;
-        if (getWorkDaysRequired() == 0) {
+        if (getWorkDaysRequired() <= 0) {
             System.out.println("Project has been completed!");
             setProjectStatus(true);
         }
         if(b <= 1 ){
             bugCount++;
-            System.out.println("BUG FOUND");
         }
-
     }
 
     public int getBugCount(){
@@ -179,5 +177,5 @@ public class Project {
         setBugCount(0);
     }
 
-
+    public boolean givenAlready;
 }

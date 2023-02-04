@@ -1,11 +1,4 @@
-import BaseGame.DailyOption;
-import OtherClasses.NumberGenerator;
 import OtherClasses.TheGame;
-import People.Workers.Programmer;
-import Projects.ProjectGenerator;
-import settings.SettingsSelection;
-
-import java.util.Scanner;
 
 /*
 This is a mess. When I started making this game, God and I knew how it worked.
@@ -19,33 +12,7 @@ Now only God knows, so here is how many hours I wasted trying to figure out stuf
 
 public class Main {
     public static void main(String[] args) {
-        Scanner select = new Scanner(System.in);
-        SettingsSelection color = new SettingsSelection();
-        DailyOption DailyOption1 = new DailyOption();
-        ProjectGenerator projects = new ProjectGenerator();
-        NumberGenerator test = new NumberGenerator();
-
-
-
-        try {
             TheGame TheGame = new TheGame();
         }
-        catch (Exception InputMismatchException)
-        {
-            System.out.println("Please use valid inputs.");
-            TheGame TheGame = new TheGame();
-        }
-
-
-
-
-        //Programmer programmer = new Programmer();
-        //programmer.test();
-       // programmer.getWorkerStats();
-
-
-        /*
-*/
-
     }
-}
+

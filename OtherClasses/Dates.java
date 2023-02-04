@@ -1,30 +1,38 @@
 package OtherClasses;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import java.time.LocalDate;
+
+import static java.util.Calendar.DATE;
 
 public class Dates {
     static SimpleDateFormat sdf = new SimpleDateFormat("yyyy MMM dd");
-    static Calendar calendar = new GregorianCalendar(2020, 0, 1);
+    public static Calendar calendar = new GregorianCalendar(2020, 0, 1);
+    int i=0;
+
     public static void startingDate() {
         sdf.format(calendar.getTime());
         System.out.print(sdf.format(calendar.getTime()));
     }
-    public static void increase(int howToIncrease){
-        if(howToIncrease<0){
+
+    public static void increase(int howToIncrease) {
+        if (howToIncrease < 0) {
             System.out.println("You cannot go back in time.");
             System.exit(0);
         }
-        calendar.add(Calendar.DATE,howToIncrease);
+        calendar.add(DATE, howToIncrease);
     }
-public void displayDate(){
-    System.out.println(sdf.format(calendar.getTime()));
-}
 
-public int zusCheck(){
-    return calendar.get(3);
-}
+    public int zusCheck() {
+        i++;
+        if (i >=31){
+            i = 0;
+        }
+        return i;
+    }
+
+
 
 
 }

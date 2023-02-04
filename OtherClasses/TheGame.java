@@ -17,7 +17,7 @@ public class TheGame extends DailyOption {
             System.out.println("");
             System.out.print("Today the first day of your new adventure. ");
             System.out.println("Your new startup is up and running but it's up to you to start it all up.");
-            System.out.println("The goal of this game is simple - complete 3 HARD projects without doing any programming or testing work (yourself)");
+            System.out.println("The goal of this game is simple - complete 3 projects, preferably without doing any programming or testing work.");
             System.out.println("Additionally, at lest one of these projects need to be selected by one of your workers...");
             System.out.println("Good luck!");
             System.out.println("");
@@ -70,10 +70,8 @@ public class TheGame extends DailyOption {
         while (readInput1 != 1) {
             try {
                 readInput1 = select.nextInt();
-            }
-            catch (Exception InputMismatchException)
-            {
-            //System.out.println("Please use valid inputs");
+            } catch (Exception InputMismatchException) {
+                //System.out.println("Please use valid inputs");
                 readInput1 = select.nextInt();
             }
 
