@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="Game is as finished as it's gonna be." />
+    <list default="true" id="43d143a2-0519-4a63-871e-cb7ac9286ad5" name="Changes" comment="quick fix for contractors not being properly implemented">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseGame/DailyOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaseGame/DailyOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/People/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/People/Worker.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -337,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675536744983</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="quick fix for contractors not being properly implemented">
+      <created>1675538640212</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1675538640212</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -352,7 +363,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Even more work on projects. Now there are names, descriptions, requirements, and easy/medium/hard levels." />
     <MESSAGE value="trying to create a class for actual projects. this will assign generated projects to it." />
     <MESSAGE value="trying to create a class for actual projects. this will assign generated projects to it.&#10;Side note: i have no idea what i'm doing after ~9 hours of non-stop code" />
     <MESSAGE value="more work on project class" />
@@ -377,7 +387,8 @@
     <MESSAGE value="more work on projects, workers, and other stuff" />
     <MESSAGE value="Slowly finishing the project. Now it is possible to give the completed project and get a reward/penalty" />
     <MESSAGE value="Game is as finished as it's gonna be." />
-    <option name="LAST_COMMIT_MESSAGE" value="Game is as finished as it's gonna be." />
+    <MESSAGE value="quick fix for contractors not being properly implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="quick fix for contractors not being properly implemented" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">

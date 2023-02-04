@@ -215,6 +215,20 @@ public class Worker extends Person {
             projectGenerator.workerTesting();
         }
     }
-}
 
+    public void workerPayment(){
+        if(programmer1.isHired)
+            stats.cash-= programmer1.cash;
+        if(programmer2.isHired)
+            stats.cash-= programmer2.cash;
+        if(programmer3.isHired)
+            stats.cash-= programmer3.cash;
+        if(tester1.isHired)
+            stats.cash-= tester1.cash;
+        if(seller.isHired)
+            stats.cash-= seller.cash;
+        if(contractor.isHired)
+            stats.cash-= contractor.cash;
+    }
+}
 

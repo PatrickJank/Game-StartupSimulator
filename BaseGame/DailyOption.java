@@ -51,6 +51,12 @@ public class DailyOption extends ProjectGenerator {
             check();
             worker.ContractorWorking();
             checking = dates.zusCheck();
+            worker.workerPayment();
+            if(stats.cash<0){
+                System.out.println("GAME OVER! YOU HAVE NO MORE MONEY!");
+                System.exit(0);
+            }
+
             switch (option) {
                 case 1 -> {
                     if ((Project1.getProjectName() == null) || (Project2.getProjectName() == null)) {
