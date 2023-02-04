@@ -49,6 +49,7 @@ public class DailyOption extends ProjectGenerator {
             }
             worker.work();
             check();
+            worker.ContractorWorking();
             checking = dates.zusCheck();
             switch (option) {
                 case 1 -> {
@@ -153,7 +154,7 @@ public class DailyOption extends ProjectGenerator {
                     SelectedOption();
                 }
                 case 10 -> {
-                    System.out.println("This is a placeholder for hiring a contractor");
+                    worker.HireAContractor();
                     check();
                     Dates.increase(1);
                     DailyChoice();
